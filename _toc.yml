@@ -3,23 +3,21 @@
 format: jb-book
 root: intro
 parts:
-- caption: Análisis de resultados PAU 2024/25
-  chapters:
-  - file: intro.md
-    title: Introducción 
-  - file: metodologia.md
-    title: Metodología
+  - caption: Análisis de resultados PAU 2024/25
+    chapters:
+      - file: metodologia.md
+        title: Metodología
 
-- caption: A. Análisis parte xeral
-  chapters:
-  - file: parte_xeral_a1.ipynb
-    title: A1. Sin diferenciar materias de modalidad
-  - file: parte_xeral_a2.ipynb
-    title: A2. Diferenciando materias de modalidad
+  - caption: A. Análisis parte xeral
+    chapters:
+      - file: parte_xeral_a1.ipynb
+        title: A1. Sin diferenciar materias de modalidad
+      - file: parte_xeral_a2.ipynb
+        title: A2. Diferenciando materias de modalidad
 
-- caption: B. Análisis parte voluntaria
-  chapters:
-  - file: proba_voluntaria_A.ipynb
-    title: B1. Sin diferenciar materias voluntarias
-  - file: proba_voluntaria_B.ipynb
-    title: B2. Diferenciando materias voluntarias
+  - caption: B. Análisis parte voluntaria
+    chapters:
+      - file: proba_voluntaria_A.ipynb
+        title: B1. Sin diferenciar materias voluntarias
+      - file: proba_voluntaria_B.ipynb
+        title: B2. Diferenciando materias voluntarias
