@@ -1,0 +1,38 @@
+version: 1
+project:
+  title: PAU 2024/25 - Análisis de resultados
+  authors:
+    - name: Alberto Durán Pérez
+  github: citius70/pau_2024_25
+  bibliography:
+    - references.bib
+  exports:
+    - format: pdf
+      template: plain_latex_book
+      output: exports/book.pdf
+  toc:
+    - file: intro.md
+    - title: Análisis de resultados PAU 2024/25
+      children:
+        - file: intro.md
+          title: Introducción
+        - file: metodologia.md
+          title: Metodología
+    - title: A. Análisis parte xeral
+      children:
+        - file: parte_xeral_a1.ipynb
+          title: A1. Sin diferenciar materias de modalidad
+        - file: parte_xeral_a2.ipynb
+          title: A2. Diferenciando materias de modalidad
+    - title: B. Análisis parte voluntaria
+      children:
+        - file: proba_voluntaria_A.ipynb
+          title: B1. Sin diferenciar materias voluntarias
+        - file: proba_voluntaria_B.ipynb
+          title: B2. Diferenciando materias voluntarias
+site:
+  options:
+    logo: logo_origami2.png
+    title: PAU 2024/25 - Análisis de resultados
+    folders: true
+  template: book-theme

@@ -1,0 +1,73 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  title: PAU 2024/25 - Análisis de resultados
+  description: Análisis estadístico de los resultados de las Pruebas de Acceso a la Universidad 2024/25
+  keywords: 
+    - PAU
+    - análisis estadístico
+    - educación
+    - resultados académicos
+    - Galicia
+  authors:
+    - name: Alberto Durán Pérez
+      email: aduranperez@edu.xunta.gal
+  github: citius70/pau_2024_25
+  bibliography:
+    - references.bib
+  exports:
+    - format: pdf
+      template: plain_latex_book
+      output: exports/book.pdf
+  toc:
+    - file: intro.md
+    - title: Análisis de resultados PAU 2024/25
+      children:
+        - file: intro.md
+          title: Introducción
+        - file: metodologia.md
+          title: Metodología
+    - title: A. Análisis parte xeral
+      children:
+        - file: parte_xeral_a1.ipynb
+          title: A1. Sin diferenciar materias de modalidad
+        - file: parte_xeral_a2.ipynb
+          title: A2. Diferenciando materias de modalidad
+    - title: B. Análisis parte voluntaria
+      children:
+        - file: proba_voluntaria_A.ipynb
+          title: B1. Sin diferenciar materias voluntarias
+        - file: proba_voluntaria_B.ipynb
+          title: B2. Diferenciando materias voluntarias
+
+site:
+  template: book-theme
+  title: PAU 2024/25 - Análisis de resultados
+  options:
+    logo: logo_origami2.png
+    folders: true
+    hide_toc: false
+    hide_outline: true
+  nav:
+    - title: Inicio
+      url: /
+    - title: Metodología
+      url: /metodologia
+    - title: Análisis
+      children:
+        - title: Parte General
+          url: /parte_xeral_a1
+        - title: Parte Voluntaria
+          url: /proba_voluntaria_A
+    - title: Recursos
+      children:
+        - title: Ver en GitHub
+          url: https://github.com/citius70/pau_2024_25
+        - title: Descargar PDF
+          url: /exports/book.pdf
+  actions:
+    - title: Descargar PDF
+      url: /exports/book.pdf
+    - title: Ver en GitHub
+      url: https://github.com/citius70/pau_2024_25
+  domains: []

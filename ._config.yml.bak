@@ -1,0 +1,73 @@
+# Book settings
+# Más info: https://jupyterbook.org/customize/config.html
+
+title: PAU 2025/26 - Análisis de resultados  
+author: Alberto Durán Pérez  
+logo: firma frei martin resolución.jpg
+
+# Reejecutar notebooks automáticamente si es necesario
+execute:
+  execute_notebooks: auto
+  allow_errors: false
+  timeout: 30
+
+# Archivo de salida para PDF (opcional)
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Bibliografía
+bibtex_bibfiles:
+  - references.bib
+
+# Configuración del tema y funcionalidades avanzadas
+sphinx:
+  config:
+    html_theme: sphinx_book_theme
+    html_code_fold: true  # ✅ Activa el plegado de código
+    # Configuraciones adicionales para mejorar la experiencia
+    html_theme_options:
+      collapse_navigation: true
+      navigation_depth: 2
+      show_toc_level: 2
+      repository_url: https://github.com/citius70/pau_2024_25
+      repository_branch: gh-pages
+      use_repository_button: true
+      use_issues_button: true
+      use_download_button: true
+    # Mensajes personalizados para los botones de toggle
+    togglebutton_hint: "Mostrar código"
+    togglebutton_hint_hide: "Ocultar código"
+
+# Información del repositorio en la web
+repository:
+  url: https://github.com/citius70/pau_2024_25
+  path_to_book: .  # Ajusta si tu libro está en una subcarpeta
+  branch: gh-pages
+
+# Botones para la interfaz
+html:
+  use_issues_button: true
+  use_repository_button: true
+  use_download_button: true
+  # Configuración adicional para navegación
+  collapse_navigation: true
+  show_navbar_depth: 2
+  navbar_start: ["navbar-logo"]
+  navbar_center: ["navbar-nav"]
+  navbar_end: ["navbar-icon-links"]
+  navbar_persistent: ["search-button"]
+
+# Habilitar extensiones MyST útiles
+parse:
+  myst_enable_extensions:
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_admonition
+    - html_image
+    - linkify
+    - replacements
+    - smartquotes
+    - substitution
+    - tasklist
