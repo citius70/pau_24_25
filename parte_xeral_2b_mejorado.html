@@ -1,0 +1,1254 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Análisis 2: Análisis de resultados diferenciando materias de modalidad &#8212; My Jupyter Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'parte_xeral_2b_mejorado';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">My Jupyter Book</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Análisis de resultados PAU 2024/25</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="metodologia.html">Metodología</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">A. Análisis parte xeral</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="parte_xeral_a1.html">A1. Sin diferenciar materias de modalidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="parte_xeral_a2.html">A2. Diferenciando materias de modalidad</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">B. Análisis parte voluntaria</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="proba_voluntaria_A.html">B1. Sin diferenciar materias voluntarias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proba_voluntaria_B.html">B2. Proba voluntaria: diferenciando materias de modalidad</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/parte_xeral_2b_mejorado.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Análisis 2: Análisis de resultados diferenciando materias de modalidad</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Análisis 2: Análisis de resultados diferenciando materias de modalidad</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#identificar-las-materias-de-modalidad">#  1. Identificar las materias de modalidad</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#agrupar-por-materia-de-modalidad">#  2. Agrupar por materia de modalidad</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-por-materia">#  2. Visualización por materia</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones">#  3. Conclusiones</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tendencias-generales-del-rendimiento"># #  3.1. <strong>Tendencias generales del rendimiento:</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-por-materia-de-modalidad"># #  3.2. <strong>Análisis por materia de modalidad</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-musical-ii"># # #  <strong>1. Análisis Musical II</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#artes-escenicas-ii"># # #  <strong>2. Artes Escénicas II</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#debuxo-artistico-ii"># # #  <strong>3. Debuxo Artístico II</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matematicas-apl-as-cc-ss"># # #  <strong>4. Matemáticas Apl. ás CC.SS.</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matematicas-ii"># # #  <strong>5. Matemáticas II</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-general"># #  3.3. <strong>Conclusión General</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#recomendaciones"># #  3.4. <strong>Recomendaciones</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#patron-general"># #  3.5. <strong>Patrón general</strong></a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="analisis-2-analisis-de-resultados-diferenciando-materias-de-modalidad">
+<h1><strong>Análisis 2: Análisis de resultados diferenciando materias de modalidad</strong><a class="headerlink" href="#analisis-2-analisis-de-resultados-diferenciando-materias-de-modalidad" title="Link to this heading">#</a></h1>
+<p>Es oportuno hacer un análisis de los datos teniendo en cuenta las distintas materias de modalidad.</p>
+<p><strong>Objetivo:</strong></p>
+<ul class="simple">
+<li><p>Identificar las materias de modalidad: Filtrar el DataFrame para incluir solo las columnas relevantes para las materias de modalidad.</p></li>
+<li><p>Agrupar por materia de modalidad: Agrupar los datos por la columna ‘Materia modalidade’.</p></li>
+<li><p>Análisis estadístico por materia: Calcular los estadísticos descriptivos (media, mediana, desviación estándar, etc.) para la columna ‘Cualif. Materia Modalidade’ dentro de cada grupo (cada materia de modalidad).</p></li>
+<li><p>Visualización por materia: Generar histogramas y/o box plots de la columna ‘Cualif. Materia Modalidade’ para cada materia de modalidad para visualizar sus distribuciones.</p></li>
+<li><p>Comparar y concluir: Analizar los resultados estadísticos y las visualizaciones para comparar el rendimiento en las diferentes materias de modalidad e identificar posibles diferencias.</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="identificar-las-materias-de-modalidad">
+<h1>#  1. Identificar las materias de modalidad<a class="headerlink" href="#identificar-las-materias-de-modalidad" title="Link to this heading">#</a></h1>
+<p>Filtramos el DataFrame para incluir solo las columnas relevantes para las materias de modalidad, las cuales son: ´Materia de modalidade´ y ´Cualif. Materia de Modalidade´</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&quot;proba_xeral.xlsx&quot;</span><span class="p">)</span>
+
+<span class="n">modalidad_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Apelidos&#39;</span><span class="p">,</span><span class="s1">&#39;Nome&#39;</span><span class="p">,</span> <span class="s1">&#39;Nom. Materia modalidade&#39;</span><span class="p">,</span> <span class="s1">&#39;Materia Modalidade&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">modalidad_df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Apelidos</th>
+      <th>Nome</th>
+      <th>Nom. Materia modalidade</th>
+      <th>Materia Modalidade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ÁLVAREZ GRAÑA</td>
+      <td>ERIC</td>
+      <td>Artes Escénicas II</td>
+      <td>4.50</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AMMI GUAROUACH</td>
+      <td>ZARA</td>
+      <td>Latín II</td>
+      <td>7.00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ARIAS PORTELA</td>
+      <td>JOSÉ</td>
+      <td>Matemáticas II</td>
+      <td>8.75</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>BARREIRO ALDAO</td>
+      <td>LIDIA</td>
+      <td>Análisis Musical II</td>
+      <td>6.50</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>CABO SENRA</td>
+      <td>MARTÍN</td>
+      <td>Matemáticas II</td>
+      <td>9.50</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>CALVO DURÁN</td>
+      <td>ADÁN</td>
+      <td>Matemáticas II</td>
+      <td>7.75</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>CASADO MIRANDA</td>
+      <td>UXÍA</td>
+      <td>Artes Escénicas II</td>
+      <td>5.00</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>CASTRO GONZÁLEZ</td>
+      <td>ESTELA</td>
+      <td>Matemáticas II</td>
+      <td>8.25</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>FARAMIÑÁN FERVENZA</td>
+      <td>HUGO</td>
+      <td>Debuxo Artístico II</td>
+      <td>7.00</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>FEIJOÓ GONZÁLEZ</td>
+      <td>HUGO</td>
+      <td>Matemáticas II</td>
+      <td>5.75</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>FREIJEIRO ARCA</td>
+      <td>ALBA</td>
+      <td>Artes Escénicas II</td>
+      <td>5.00</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>GARCÍA BARROS</td>
+      <td>NEREA</td>
+      <td>Debuxo Artístico II</td>
+      <td>5.00</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>GARCÍA LORES</td>
+      <td>SANDRA</td>
+      <td>Matemáticas Apl. ás CC.SS.</td>
+      <td>7.25</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>GARCÍA MARTÍNEZ</td>
+      <td>ACRACIA SARA</td>
+      <td>Debuxo Artístico II</td>
+      <td>9.25</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>GÓMEZ NOVAS</td>
+      <td>CECILIA</td>
+      <td>Debuxo Artístico II</td>
+      <td>6.00</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>HOLGADO PIÑEIRO</td>
+      <td>IVO</td>
+      <td>Artes Escénicas II</td>
+      <td>5.00</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>IGLESIAS MONTERO</td>
+      <td>CELIA</td>
+      <td>Debuxo Artístico II</td>
+      <td>6.00</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>LAMAS PAZOS</td>
+      <td>EMMA</td>
+      <td>Matemáticas Apl. ás CC.SS.</td>
+      <td>7.50</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>LEÓN MESÍAS</td>
+      <td>ANA</td>
+      <td>Debuxo Artístico II</td>
+      <td>8.00</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>LOURO ESPERÓN</td>
+      <td>DAVID</td>
+      <td>Matemáticas Apl. ás CC.SS.</td>
+      <td>9.00</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>MAIT RODRÍGUEZ</td>
+      <td>ZAIRA</td>
+      <td>Debuxo Artístico II</td>
+      <td>6.25</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>MARTÍNEZ PAZOS</td>
+      <td>CLAUDIA</td>
+      <td>Matemáticas Apl. ás CC.SS.</td>
+      <td>6.00</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>MENDONÇA MIRANDA HENRIQUES</td>
+      <td>LUNNA</td>
+      <td>Matemáticas Apl. ás CC.SS.</td>
+      <td>6.25</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>MURO HILLERUD</td>
+      <td>DELIA NANDINI</td>
+      <td>Matemáticas Apl. ás CC.SS.</td>
+      <td>5.00</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>OLTRA LOURIDO</td>
+      <td>CANDELA</td>
+      <td>Debuxo Artístico II</td>
+      <td>6.00</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>OTERO DURÁN</td>
+      <td>ADRIÁN</td>
+      <td>Matemáticas Apl. ás CC.SS.</td>
+      <td>8.25</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>PAZOS DOMÍNGUEZ</td>
+      <td>ALEJANDRO</td>
+      <td>Matemáticas Apl. ás CC.SS.</td>
+      <td>9.50</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>PEÓN GÁNDARA</td>
+      <td>IAGO</td>
+      <td>Matemáticas II</td>
+      <td>8.50</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>PÉREZ PENAS</td>
+      <td>MAX</td>
+      <td>Debuxo Artístico II</td>
+      <td>9.00</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>PILAY RUIZ</td>
+      <td>ELVIS BRYAN</td>
+      <td>Matemáticas Apl. ás CC.SS.</td>
+      <td>3.50</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>QUINTANA GARCÍA</td>
+      <td>MARIO</td>
+      <td>Matemáticas Apl. ás CC.SS.</td>
+      <td>7.25</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>RODRÍGUEZ AGUIAR</td>
+      <td>SARA</td>
+      <td>Latín II</td>
+      <td>5.50</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+
+
+<span class="n">modalidad_counts</span> <span class="o">=</span> <span class="n">modalidad_df</span><span class="p">[</span><span class="s1">&#39;Nom. Materia modalidade&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">modalidad_counts</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">modalidad_counts</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="n">modalidad_counts</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;Set3&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Número de Estudiantes con Calificación por Materia de Modalidad&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Nº de Estudiantes&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+
+
+<span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">patches</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">get_height</span><span class="p">())</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="o">+</span> <span class="n">p</span><span class="o">.</span><span class="n">get_width</span><span class="p">()</span> <span class="o">/</span> <span class="mf">2.</span><span class="p">,</span> <span class="n">p</span><span class="o">.</span><span class="n">get_height</span><span class="p">()),</span>
+                <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="n">textcoords</span><span class="o">=</span><span class="s1">&#39;offset points&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\Users\alber\anaconda3\envs\ciencia_datos\Lib\site-packages\seaborn\_statistics.py:32: UserWarning: A NumPy version &gt;=1.23.5 and &lt;2.3.0 is required for this version of SciPy (detected version 2.3.1)
+  from scipy.stats import gaussian_kde
+</pre></div>
+</div>
+<img alt="_images/f862ff394c6cb0fa9f6361589fcc39c842332ab8874fd7659ac6fbd1fe025b7d.png" src="_images/f862ff394c6cb0fa9f6361589fcc39c842332ab8874fd7659ac6fbd1fe025b7d.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">modalidad_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Nom. Materia modalidade&#39;</span><span class="p">)[</span><span class="s1">&#39;Materia Modalidade&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Nom. Materia modalidade</th>
+      <th>Análisis Musical II</th>
+      <th>Artes Escénicas II</th>
+      <th>Debuxo Artístico II</th>
+      <th>Latín II</th>
+      <th>Matemáticas Apl. ás CC.SS.</th>
+      <th>Matemáticas II</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>1.0</td>
+      <td>4.000</td>
+      <td>9.000000</td>
+      <td>2.00000</td>
+      <td>10.000000</td>
+      <td>6.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>6.5</td>
+      <td>4.875</td>
+      <td>6.944444</td>
+      <td>6.25000</td>
+      <td>6.950000</td>
+      <td>8.083333</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>NaN</td>
+      <td>0.250</td>
+      <td>1.483123</td>
+      <td>1.06066</td>
+      <td>1.824981</td>
+      <td>1.281275</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>6.5</td>
+      <td>4.500</td>
+      <td>5.000000</td>
+      <td>5.50000</td>
+      <td>3.500000</td>
+      <td>5.750000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>6.5</td>
+      <td>4.875</td>
+      <td>6.000000</td>
+      <td>5.87500</td>
+      <td>6.062500</td>
+      <td>7.875000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>6.5</td>
+      <td>5.000</td>
+      <td>6.250000</td>
+      <td>6.25000</td>
+      <td>7.250000</td>
+      <td>8.375000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>6.5</td>
+      <td>5.000</td>
+      <td>8.000000</td>
+      <td>6.62500</td>
+      <td>8.062500</td>
+      <td>8.687500</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>6.5</td>
+      <td>5.000</td>
+      <td>9.250000</td>
+      <td>7.00000</td>
+      <td>9.500000</td>
+      <td>9.500000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="agrupar-por-materia-de-modalidad">
+<h1>#  2. Agrupar por materia de modalidad<a class="headerlink" href="#agrupar-por-materia-de-modalidad" title="Link to this heading">#</a></h1>
+<p>Agrupar los datos por la columna ‘Materia modalidade’ para preparar el análisis estadístico y la visualización por materia.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">modalidad_stats</span> <span class="o">=</span> <span class="n">modalidad_df</span><span class="p">[</span><span class="s1">&#39;Materia Modalidade&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
+<span class="n">display</span><span class="p">(</span><span class="n">modalidad_stats</span><span class="p">)</span>
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">modalidad_df</span><span class="p">[</span><span class="s1">&#39;Materia Modalidade&#39;</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribución de Materia Modalidade&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Puntuaciones&#39;</span><span class="p">)</span>  
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>    
+
+
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;whitegrid&quot;</span><span class="p">)</span>
+
+<span class="c1"># Crear histogramaplt.figure(figsize=(5, 4))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">modalidad_df</span><span class="p">[</span><span class="s1">&#39;Materia Modalidade&#39;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">)</span>
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Histograma de Calificaciones - Materia Modalidade&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Calificación&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frecuencia&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+      <th>mean</th>
+      <th>std</th>
+      <th>min</th>
+      <th>25%</th>
+      <th>50%</th>
+      <th>75%</th>
+      <th>max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Materia Modalidade</th>
+      <td>32.0</td>
+      <td>6.84375</td>
+      <td>1.634741</td>
+      <td>3.5</td>
+      <td>5.6875</td>
+      <td>6.75</td>
+      <td>8.25</td>
+      <td>9.5</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><img alt="_images/a8e34092b38ecf53510e75617d111976abbb692a5e92073bb4fe85d4e6a037e6.png" src="_images/a8e34092b38ecf53510e75617d111976abbb692a5e92073bb4fe85d4e6a037e6.png" />
+<img alt="_images/057c3d997fd22bf2c04386f017e0548b99e1168347cde8a80628bdfb8f8d8ea1.png" src="_images/057c3d997fd22bf2c04386f017e0548b99e1168347cde8a80628bdfb8f8d8ea1.png" />
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="visualizacion-por-materia">
+<h1>#  2. Visualización por materia<a class="headerlink" href="#visualizacion-por-materia" title="Link to this heading">#</a></h1>
+<p>Generar histogramas y box plots de la columna ‘Materia Modalidade’ para cada materia de modalidad para visualizar sus distribuciones.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+
+
+<span class="n">modalities</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">modalidad_df</span><span class="p">[</span><span class="s1">&#39;Nom. Materia modalidade&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">color_palette</span><span class="p">(</span><span class="s1">&#39;Set3&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">modalities</span><span class="p">))</span>
+<span class="n">color_map</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">modalities</span><span class="p">,</span> <span class="n">colors</span><span class="p">))</span>
+
+
+<span class="n">grouped_modalidad_df</span> <span class="o">=</span> <span class="n">modalidad_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Nom. Materia modalidade&#39;</span><span class="p">)[</span><span class="s1">&#39;Materia Modalidade&#39;</span><span class="p">]</span>
+
+
+<span class="n">num_modalidades</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">modalities</span><span class="p">)</span>
+<span class="n">cols</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">rows</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">num_modalidades</span> <span class="o">/</span> <span class="n">cols</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="n">cols</span> <span class="o">*</span> <span class="mi">5</span><span class="p">,</span> <span class="n">rows</span> <span class="o">*</span> <span class="mi">4</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">modality</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">modalities</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">cols</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">group</span> <span class="o">=</span> <span class="n">grouped_modalidad_df</span><span class="o">.</span><span class="n">get_group</span><span class="p">(</span><span class="n">modality</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">group</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color_map</span><span class="p">[</span><span class="n">modality</span><span class="p">])</span> 
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Distribución de Cualificacións para </span><span class="si">{</span><span class="n">modality</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Cualificación&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frecuencia&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span> 
+    <span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span> 
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">modalidad_df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Nom. Materia modalidade&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Materia Modalidade&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;Nom. Materia modalidade&#39;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="n">color_map</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="n">modalities</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1"># Use color map and specify order</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">swarmplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">modalidad_df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Nom. Materia modalidade&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Materia Modalidade&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">(),</span> <span class="n">order</span><span class="o">=</span><span class="n">modalities</span><span class="p">)</span> <span class="c1"># Add individual points and specify order</span>
+
+
+<span class="n">modalities_mean</span> <span class="o">=</span> <span class="n">grouped_modalidad_df</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reindex</span><span class="p">(</span><span class="n">modalities</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">modalities</span><span class="p">)),</span> <span class="n">y</span><span class="o">=</span><span class="n">modalities_mean</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">edgecolors</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span> 
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Box Plot de Cualificacións por Materia de Modalidade con Puntos Individuais e Medias&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Materia de Modalidade&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Cualificación&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span>
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/5f3fb2b19aa2dd015db5cb2bf263dbc5934e1933c0c97991581ceaf15b1c8dd7.png" src="_images/5f3fb2b19aa2dd015db5cb2bf263dbc5934e1933c0c97991581ceaf15b1c8dd7.png" />
+<img alt="_images/269c1461edd8f18608e3bf770077aedc1232e5203c1890cc65d675479f5fb149.png" src="_images/269c1461edd8f18608e3bf770077aedc1232e5203c1890cc65d675479f5fb149.png" />
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="conclusiones">
+<h1>#  3. Conclusiones<a class="headerlink" href="#conclusiones" title="Link to this heading">#</a></h1>
+<p>Analizamos los resultados estadísticos y las visualizaciones para comparar el rendimiento en las diferentes materias de modalidad e identificar posibles diferencias.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="tendencias-generales-del-rendimiento">
+<h1># #  3.1. <strong>Tendencias generales del rendimiento:</strong><a class="headerlink" href="#tendencias-generales-del-rendimiento" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>La <strong>media global</strong> de las materias de modalidad es <strong>6,84</strong>, y la <strong>mediana global</strong> es <strong>6,75</strong>.
+→ Esto indica un rendimiento medio-alto en conjunto, con ligeros sesgos positivos (la media está ligeramente por encima de la mediana).</p></li>
+<li><p>La mayoría de las asignaturas parecen tener pocos alumnos, lo cual es habitual en materias de 2º de Bachillerato. Las calificaciones tienden a concentrarse entre el 5 y el 8, reflejando en general un nivel medio de rendimiento. Las materias con más alumnos permiten una mejor observación de la distribución y muestran una mayor diversidad de resultados.</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="analisis-por-materia-de-modalidad">
+<h1># #  3.2. <strong>Análisis por materia de modalidad</strong><a class="headerlink" href="#analisis-por-materia-de-modalidad" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="analisis-musical-ii">
+<h1># # #  <strong>1. Análisis Musical II</strong><a class="headerlink" href="#analisis-musical-ii" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><strong>Datos estadísticos</strong>:</p>
+<ul>
+<li><p>Solo hay un dato (count = 1.0) con una calificación de <strong>6.5</strong>.</p></li>
+<li><p>No hay desviación estándar (std = NaN) porque solo hay un valor.</p></li>
+</ul>
+</li>
+<li><p><strong>Histograma</strong>:</p>
+<ul>
+<li><p>No se puede analizar por falta de datos suficientes.</p></li>
+</ul>
+</li>
+<li><p><strong>Box Plot</strong>:</p>
+<ul>
+<li><p>Se representa como una línea única en <strong>6.5</strong> (sin rango intercuartílico ni bigotes).</p></li>
+</ul>
+</li>
+<li><p><strong>Conclusión</strong>:</p>
+<ul>
+<li><p>Muestra insuficiente para análisis significativo. Podría tratarse de un error o una materia con muy pocos estudiantes.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="artes-escenicas-ii">
+<h1># # #  <strong>2. Artes Escénicas II</strong><a class="headerlink" href="#artes-escenicas-ii" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><strong>Datos estadísticos</strong>:</p>
+<ul>
+<li><p><strong>4 estudiantes</strong>, media = <strong>4.875</strong>, desviación estándar baja (<strong>0.250</strong>).</p></li>
+<li><p>Rango estrecho: <strong>4.5 a 5.0</strong> (sin outliers).</p></li>
+</ul>
+</li>
+<li><p><strong>Histograma</strong>:</p>
+<ul>
+<li><p>Concentrado en <strong>5.0</strong>, con una pequeña frecuencia en <strong>4.5</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Box Plot</strong>:</p>
+<ul>
+<li><p>La caja es estrecha (Q1 = 4.875, Q3 = 5.0), confirmando poca variabilidad.</p></li>
+<li><p>No hay bigotes significativos, ya que todos los datos están muy agrupados.</p></li>
+</ul>
+</li>
+<li><p><strong>Conclusión</strong>:</p>
+<ul>
+<li><p><strong>Rendimiento homogéneo y alto</strong>. Posible evaluación poco discriminante o grupo muy uniforme.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="debuxo-artistico-ii">
+<h1># # #  <strong>3. Debuxo Artístico II</strong><a class="headerlink" href="#debuxo-artistico-ii" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><strong>Datos estadísticos</strong>:</p>
+<ul>
+<li><p><strong>9 estudiantes</strong>, media = <strong>6.944</strong>, desviación estándar moderada (<strong>1.483</strong>).</p></li>
+<li><p>Rango amplio: <strong>5.0 a 9.25</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Histograma</strong>:</p>
+<ul>
+<li><p>Distribución ligeramente sesgada a la izquierda, con mayoría en <strong>6.0–8.0</strong> y un caso bajo (<strong>5.0</strong>).</p></li>
+</ul>
+</li>
+<li><p><strong>Box Plot</strong>:</p>
+<ul>
+<li><p>Caja muestra Q1 = 6.0, Q3 = 8.0 (rango intercuartílico amplio).</p></li>
+<li><p>Bigotes llegan a <strong>5.0</strong> (mínimo) y <strong>9.25</strong> (máximo).</p></li>
+<li><p>Posible outlier en <strong>5.0</strong> (punto alejado de la caja).</p></li>
+</ul>
+</li>
+<li><p><strong>Conclusión</strong>:</p>
+<ul>
+<li><p><strong>Mayoría con buen rendimiento, pero un estudiante rezagado</strong>. Podría requerir apoyo individualizado.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="matematicas-apl-as-cc-ss">
+<h1># # #  <strong>4. Matemáticas Apl. ás CC.SS.</strong><a class="headerlink" href="#matematicas-apl-as-cc-ss" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><strong>Datos estadísticos</strong>:</p>
+<ul>
+<li><p><strong>10 estudiantes</strong>, media = <strong>6.95</strong>, alta desviación estándar (<strong>1.825</strong>).</p></li>
+<li><p>Rango muy amplio: <strong>3.5 a 9.5</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Histograma</strong>:</p>
+<ul>
+<li><p>Distribución bimodal o con outliers (picos en extremos bajos y altos).</p></li>
+</ul>
+</li>
+<li><p><strong>Box Plot</strong>:</p>
+<ul>
+<li><p>Caja centrada en <strong>6.06–8.06</strong> (Q1–Q3), pero con bigotes hasta <strong>3.5</strong> y <strong>9.5</strong>.</p></li>
+<li><p><strong>Outlier claro en 3.5</strong> (punto fuera del bigote inferior).</p></li>
+</ul>
+</li>
+<li><p><strong>Conclusión</strong>:</p>
+<ul>
+<li><p><strong>Gran variabilidad</strong>. Algunos estudiantes sobresalen (9.5), pero otros fracasan (3.5). Sugiere diferencias en comprensión o metodología de enseñanza.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="matematicas-ii">
+<h1># # #  <strong>5. Matemáticas II</strong><a class="headerlink" href="#matematicas-ii" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><strong>Datos estadísticos</strong>:</p>
+<ul>
+<li><p><strong>6 estudiantes</strong>, media = <strong>8.083</strong>, desviación estándar moderada (<strong>1.281</strong>).</p></li>
+<li><p>Rango: <strong>5.75 a 9.5</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Histograma</strong>:</p>
+<ul>
+<li><p>Sesgo a la derecha, con mayoría en <strong>7.5–9.5</strong> y un caso bajo (<strong>5.75</strong>).</p></li>
+</ul>
+</li>
+<li><p><strong>Box Plot</strong>:</p>
+<ul>
+<li><p>Caja estrecha (Q1 = 7.875, Q3 = 8.687), pero con bigote largo hacia abajo (<strong>5.75</strong>).</p></li>
+<li><p><strong>Outlier en 5.75</strong> (alejado del grupo principal).</p></li>
+</ul>
+</li>
+<li><p><strong>Conclusión</strong>:</p>
+<ul>
+<li><p><strong>Excelente rendimiento general, pero un estudiante con dificultades</strong>. Podría ser un caso aislado que necesita refuerzo.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="conclusion-general">
+<h1># #  3.3. <strong>Conclusión General</strong><a class="headerlink" href="#conclusion-general" title="Link to this heading">#</a></h1>
+<ol class="arabic simple">
+<li><p><strong>Materias artísticas (Artes Escénicas II, Debuxo Artístico II)</strong>:</p>
+<ul class="simple">
+<li><p>Resultados más homogéneos, especialmente en Artes Escénicas II.</p></li>
+<li><p>En Debuxo, hay un posible outlier que sugiere atención individual.</p></li>
+</ul>
+</li>
+<li><p><strong>Matemáticas (Matemáticas Apl. ás CC.SS. y Matemáticas II)</strong>:</p>
+<ul class="simple">
+<li><p><strong>Matemáticas Apl. ás CC.SS.</strong> muestra <strong>gran dispersión</strong>, con estudiantes en extremos opuestos (éxito vs. fracaso).</p></li>
+<li><p><strong>Matemáticas II</strong> tiene un rendimiento alto en general, pero con un outlier bajo.</p></li>
+</ul>
+</li>
+<li><p><strong>Análisis Musical II</strong>:</p>
+<ul class="simple">
+<li><p>Datos insuficientes para análisis.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="recomendaciones">
+<h1># #  3.4. <strong>Recomendaciones</strong><a class="headerlink" href="#recomendaciones" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><strong>Matemáticas Apl. ás CC.SS.</strong>: Investigar causas de la dispersión (¿dificultad de la materia? ¿métodos de evaluación?).</p></li>
+<li><p><strong>Matemáticas II y Debuxo Artístico II</strong>: Revisar el caso del estudiante con calificación baja para ofrecer apoyo.</p></li>
+<li><p><strong>Artes Escénicas II</strong>: Evaluar si la falta de variabilidad se debe a una evaluación poco exigente o a un grupo homogéneo.</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="patron-general">
+<h1># #  3.5. <strong>Patrón general</strong><a class="headerlink" href="#patron-general" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Las materias técnicas (matemáticas) presentan mayor desigualdad en resultados, mientras que las artísticas son más consistentes. Esto podría reflejar diferencias en la forma de evaluación o en la preparación previa de los estudiantes.</p></li>
+</ul>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Análisis 2: Análisis de resultados diferenciando materias de modalidad</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#identificar-las-materias-de-modalidad">#  1. Identificar las materias de modalidad</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#agrupar-por-materia-de-modalidad">#  2. Agrupar por materia de modalidad</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-por-materia">#  2. Visualización por materia</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones">#  3. Conclusiones</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tendencias-generales-del-rendimiento"># #  3.1. <strong>Tendencias generales del rendimiento:</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-por-materia-de-modalidad"># #  3.2. <strong>Análisis por materia de modalidad</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-musical-ii"># # #  <strong>1. Análisis Musical II</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#artes-escenicas-ii"># # #  <strong>2. Artes Escénicas II</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#debuxo-artistico-ii"># # #  <strong>3. Debuxo Artístico II</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matematicas-apl-as-cc-ss"># # #  <strong>4. Matemáticas Apl. ás CC.SS.</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matematicas-ii"># # #  <strong>5. Matemáticas II</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-general"># #  3.3. <strong>Conclusión General</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#recomendaciones"># #  3.4. <strong>Recomendaciones</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#patron-general"># #  3.5. <strong>Patrón general</strong></a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

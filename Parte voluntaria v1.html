@@ -1,0 +1,1133 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Parte voluntaria &#8212; My Jupyter Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Parte voluntaria v1';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">My Jupyter Book</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Análisis de resultados PAU 2024/25</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="metodologia.html">Metodología</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">A. Análisis parte xeral</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="parte_xeral_a1.html">A1. Sin diferenciar materias de modalidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="parte_xeral_a2.html">A2. Diferenciando materias de modalidad</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">B. Análisis parte voluntaria</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="proba_voluntaria_A.html">B1. Sin diferenciar materias voluntarias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proba_voluntaria_B.html">B2. Proba voluntaria: diferenciando materias de modalidad</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Parte voluntaria v1.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Parte voluntaria</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Parte voluntaria</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-estadistico">Análisis estadístico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-y-distribucion-de-calificaciones-individuales-sin-diferenciar-materias-voluntarias"><strong>1. Análisis y distribución de calificaciones individuales (sin diferenciar materias voluntarias)</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-del-histograma"><strong>Análisis del Histograma:</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones"><strong>Conclusiones</strong>:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-del-boxplot"><strong>Análisis del Boxplot:</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>Conclusiones</strong>:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-y-distribucion-de-calificaciones-diferenciando-materias-voluntarias"><strong>2. Análisis y distribución de calificaciones (diferenciando materias voluntarias)</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identificar-materias-unicas-y-no-estudiantes-calificados">Identificar materias únicas y nº estudiantes calificados</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#histogramas-por-materias-voluntarias">Histogramas por materias voluntarias</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generar-histogramas-por-materia">Generar histogramas por materia</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subtask">Subtask:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Conclusiones</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-detallado-de-calificaciones-por-materia-con-numero-de-observaciones">📈 Análisis detallado de calificaciones por materia (con número de observaciones)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-del-numero-de-calificaciones-por-materia">1. 📊 Distribución del número de calificaciones por materia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones-individuales-destacadas">2. 🔍 Conclusiones individuales destacadas</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#bioloxia-n-19">🧪 <strong>Bioloxía (n = 19)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fisica-n-6">🧲 <strong>Física (n = 6)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#matematicas-aplicadas-as-ccss-n-10">🧮 <strong>Matemáticas Aplicadas ás CCSS (n = 10)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deseno-fundamentos-artisticos-n-5-9">🧑‍🎨 <strong>Deseño / Fundamentos Artísticos (n = 5 / 9)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#empresa-e-d-m-negocio-n-9">🧑‍💼 <strong>Empresa e D.M. Negocio (n = 9)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#quimica-n-14">🧪 <strong>Química (n = 14)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tecnoloxia-e-enxenaria-ii-n-6">🧑‍💻 <strong>Tecnoloxía e Enxeñaría II (n = 6)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparativa-de-resultados-por-materia-revisar">3. 🧮 Comparativa de resultados por materia REVISAR</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#consideracions-xerais">4. 📌 Consideracións xerais</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recomendacions">5. 📎 Recomendacións</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="parte-voluntaria">
+<h1>Parte voluntaria<a class="headerlink" href="#parte-voluntaria" title="Link to this heading">#</a></h1>
+<section id="analisis-estadistico">
+<h2>Análisis estadístico<a class="headerlink" href="#analisis-estadistico" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;proba_voluntaria.xlsx&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Datos cargados exitosamente.&quot;</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error: El archivo &#39;Proba_voluntaria.xlsx&#39; no fue encontrado. Por favor, asegúrate de que el archivo esté en la ubicación correcta.&quot;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ocurrió un error al leer el archivo: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="k">try</span><span class="p">:</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span>     <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;proba_voluntaria.xlsx&#39;</span><span class="p">)</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="analisis-y-distribucion-de-calificaciones-individuales-sin-diferenciar-materias-voluntarias">
+<h2><strong>1. Análisis y distribución de calificaciones individuales (sin diferenciar materias voluntarias)</strong><a class="headerlink" href="#analisis-y-distribucion-de-calificaciones-individuales-sin-diferenciar-materias-voluntarias" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span> <span class="c1"># Import pandas as it might be needed for operations if not already in scope, though df_cleaned is available</span>
+
+<span class="c1"># The df_cleaned DataFrame already contains the combined numerical qualifications</span>
+<span class="c1"># in the &#39;Calificación&#39; column, with &#39;Non presentado&#39; handled.</span>
+<span class="n">all_qualifications</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;Calificación&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+
+
+<span class="c1"># Trazar histograma para todas las calificaciones</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">all_qualifications</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribución de Calificaciones (Todas las Materias Voluntarias)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Calificación&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frecuencia&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span> <span class="c1"># Set x-axis ticks to integers from 0 to 10</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c1"># Ensure x-axis limit is set from 0 to 10</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\Users\alber\anaconda3\envs\ciencia_datos\Lib\site-packages\seaborn\_statistics.py:32: UserWarning: A NumPy version &gt;=1.23.5 and &lt;2.3.0 is required for this version of SciPy (detected version 2.3.1)
+  from scipy.stats import gaussian_kde
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">8</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span> <span class="c1"># Import pandas as it might be needed for operations if not already in scope, though df_cleaned is available</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="c1"># The df_cleaned DataFrame already contains the combined numerical qualifications</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="c1"># in the &#39;Calificación&#39; column, with &#39;Non presentado&#39; handled.</span>
+<span class="ne">----&gt; </span><span class="mi">8</span> <span class="n">all_qualifications</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;Calificación&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="c1"># Trazar histograma para todas las calificaciones</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+
+<span class="ne">NameError</span>: name &#39;df_cleaned&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<section id="analisis-del-histograma">
+<h3><strong>Análisis del Histograma:</strong><a class="headerlink" href="#analisis-del-histograma" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Distribución general</strong>:</p>
+<ul class="simple">
+<li><p><strong>Pico principal</strong>: La frecuencia más alta se concentra en las calificaciones <strong>6-8</strong>, lo que indica que la mayoría de los estudiantes obtienen notas medias-altas.</p></li>
+<li><p><strong>Cola izquierda (notas bajas)</strong>: Hay frecuencias bajas pero significativas en el rango <strong>0-4</strong>, sugiriendo un grupo minoritario con dificultades.</p></li>
+<li><p><strong>Cola derecha (notas altas)</strong>: Las notas <strong>9-10</strong> tienen menos frecuencia que el pico central, pero aún destacan.</p></li>
+</ul>
+</li>
+<li><p><strong>Moda (valor más frecuente)</strong>:</p>
+<ul class="simple">
+<li><p>Probablemente alrededor de <strong>6</strong>, dado que es el intervalo con mayor frecuencia.</p></li>
+</ul>
+</li>
+<li><p><strong>Asimetría</strong>:</p>
+<ul class="simple">
+<li><p>La distribución está <strong>levemente sesgada a la izquierda</strong> (más notas altas que bajas), pero con una cola izquierda visible (posibles casos problemáticos).</p></li>
+</ul>
+</li>
+<li><p><strong>Brechas o patrones inesperados</strong>:</p>
+<ul class="simple">
+<li><p>Si hay intervalos con <strong>frecuencia cercana a 0</strong> (ej. calificación 5), podría indicar:</p>
+<ul>
+<li><p>Polarización (estudiantes que o bien aprueban bien o suspenden).</p></li>
+<li><p>Efecto de redondeo en las notas (ej. profesores que evitan notas intermedias).</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="conclusiones">
+<h3><strong>Conclusiones</strong>:<a class="headerlink" href="#conclusiones" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Rendimiento mayoritariamente satisfactorio</strong>: La mayoría de las calificaciones se ubican en el rango de aprobado/notable (6-8).</p></li>
+<li><p><strong>Grupo vulnerable</strong>: Las notas bajas (0-4) representan un subconjunto que requiere atención (ej. refuerzo educativo o revisión de metodologías).</p></li>
+<li><p><strong>Excelencia limitada</strong>: Pocos estudiantes alcanzan notas máximas (9-10), lo que podría sugerir que las materias opcionales son desafiantes o los criterios de evaluación son estrictos.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">all_qualifications</span><span class="p">)</span> <span class="c1"># Assign to ax to access axes</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">swarmplot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">all_qualifications</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span> <span class="c1"># Superponer swarmplot y aumentar el tamaño de los puntos, add ax=ax</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribución de Calificaciones (Boxplot con Calificaciones Individuales)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Calificación&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">10.5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/be32e6cada756e2219eff5f105d11ec0731c0ccd6b6f6d60c5793e222f2c47e2.png" src="_images/be32e6cada756e2219eff5f105d11ec0731c0ccd6b6f6d60c5793e222f2c47e2.png" />
+</div>
+</div>
+</section>
+<section id="analisis-del-boxplot">
+<h3><strong>Análisis del Boxplot:</strong><a class="headerlink" href="#analisis-del-boxplot" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Rango de calificaciones</strong>:</p>
+<ul class="simple">
+<li><p>Las calificaciones abarcan desde <strong>0 hasta 10</strong>, como es habitual en sistemas educativos.</p></li>
+<li><p>La distribución parece estar <strong>sesgada hacia calificaciones medias-altas</strong> (ej. concentración entre 5 y 9), aunque hay outliers en el extremo inferior (ej. 0 o 1).</p></li>
+</ul>
+</li>
+<li><p><strong>Mediana (línea central en la caja)</strong>:</p>
+<ul class="simple">
+<li><p>Próxima al <strong>6</strong>, lo que sugiere que la mayoría de los estudiantes obtienen calificaciones aprobatorias aceptables.</p></li>
+</ul>
+</li>
+<li><p><strong>Disperión (rango intercuartílico - IQR)</strong>:</p>
+<ul class="simple">
+<li><p>La caja (que representa el 50% central de los datos) abarca desde ~4 hasta ~7, indicando <strong>variabilidad bastante moderada</strong> en el desempeño.</p></li>
+</ul>
+</li>
+<li><p><strong>Outliers (puntos individuales)</strong>:</p>
+<ul class="simple">
+<li><p>Hay calificaciones muy bajas (ej. cercanas a 0) que se alejan del resto, lo que podría indicar:</p>
+<ul>
+<li><p>Casos atípicos (estudiantes con dificultades).</p></li>
+<li><p>Errores en la evaluación.</p></li>
+<li><p>Dificultad extrema en alguna materia específica (si el gráfico agrupa múltiples asignaturas).</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Asimetría</strong>:</p>
+<ul class="simple">
+<li><p>La cola inferior (valores bajos) es más larga que la superior, sugiriendo un <strong>sesgo negativo</strong> (más estudiantes en el rango alto, pero con algunos casos extremadamente bajos).</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="id1">
+<h3><strong>Conclusiones</strong>:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Rendimiento general aceptable</strong>: La mayoría de las calificaciones se concentran en la zona media-alta.</p></li>
+<li><p><strong>Posibles problemas específicos</strong>: Los outliers bajos podrían señalar necesidades de apoyo educativo o revisión de métodos de enseñanza en ciertos casos.</p></li>
+<li><p><strong>Consistencia</strong>: Si el gráfico agrupa múltiples materias, la dispersión sugiere que el desempeño varía significativamente entre ellas (ej. materias con notas más altas vs. más bajas).</p></li>
+</ul>
+</section>
+</section>
+<section id="analisis-y-distribucion-de-calificaciones-diferenciando-materias-voluntarias">
+<h2><strong>2. Análisis y distribución de calificaciones (diferenciando materias voluntarias)</strong><a class="headerlink" href="#analisis-y-distribucion-de-calificaciones-diferenciando-materias-voluntarias" title="Link to this heading">#</a></h2>
+</section>
+<section id="identificar-materias-unicas-y-no-estudiantes-calificados">
+<h2>Identificar materias únicas y nº estudiantes calificados<a class="headerlink" href="#identificar-materias-unicas-y-no-estudiantes-calificados" title="Link to this heading">#</a></h2>
+<p>Obtener una lista de todas las materias únicas presentes en el conjunto de datos combinado.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">materias_unicas</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;Materia&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Número de alumnos presentados por materia:&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;Materia&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span> <span class="c1"># Import numpy</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span> <span class="c1"># Import pandas</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+
+<span class="c1"># Use seaborn.barplot for coloring each bar</span>
+<span class="c1"># Get the counts and reset index to use columns with seaborn</span>
+<span class="n">counts_df</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;Materia&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">counts_df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Materia&#39;</span><span class="p">,</span> <span class="s1">&#39;Número de Alumnos&#39;</span><span class="p">]</span> <span class="c1"># Rename columns for clarity</span>
+
+<span class="c1"># Sort the dataframe by the number of students for ordering</span>
+<span class="n">counts_df_sorted</span> <span class="o">=</span> <span class="n">counts_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Número de Alumnos&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Create the bar plot with different colors per materia and ordered by count</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Número de Alumnos&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Materia&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">counts_df_sorted</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;Set1&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span> <span class="c1"># Using viridis palette, using sorted data</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Número de Alumnos Presentados por Materia&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Número de Alumnos&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Materia&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">counts_df</span><span class="p">[</span><span class="s1">&#39;Número de Alumnos&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span> <span class="c1"># Set x-axis ticks to integers</span>
+
+
+<span class="k">for</span> <span class="n">x_value</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">counts_df</span><span class="p">[</span><span class="s1">&#39;Número de Alumnos&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x_value</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;grey&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="histogramas-por-materias-voluntarias">
+<h2>Histogramas por materias voluntarias<a class="headerlink" href="#histogramas-por-materias-voluntarias" title="Link to this heading">#</a></h2>
+</section>
+<section id="generar-histogramas-por-materia">
+<h2>Generar histogramas por materia<a class="headerlink" href="#generar-histogramas-por-materia" title="Link to this heading">#</a></h2>
+<section id="subtask">
+<h3>Subtask:<a class="headerlink" href="#subtask" title="Link to this heading">#</a></h3>
+<p>Iterar sobre cada materia única y crear un histograma de las calificaciones correspondientes.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+
+<span class="n">materias_unicas</span> <span class="o">=</span> <span class="n">counts_df</span><span class="p">[</span><span class="s1">&#39;Materia&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+
+<span class="n">colors</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">color_palette</span><span class="p">(</span><span class="s1">&#39;Set1&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">materias_unicas</span><span class="p">))</span>
+
+
+<span class="n">n_materias</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">materias_unicas</span><span class="p">)</span>
+<span class="n">n_cols</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">n_rows</span> <span class="o">=</span> <span class="p">(</span><span class="n">n_materias</span> <span class="o">+</span> <span class="n">n_cols</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">//</span> <span class="n">n_cols</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">n_rows</span><span class="p">,</span> <span class="n">n_cols</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="n">n_rows</span> <span class="o">*</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">axes</span> <span class="o">=</span> <span class="n">axes</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+
+
+<span class="n">consistent_bins</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">materia</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">materias_unicas</span><span class="p">):</span>
+    <span class="n">df_materia</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;Materia&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">materia</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">df_materia</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+        <span class="n">ax</span> <span class="o">=</span> <span class="n">axes</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df_materia</span><span class="p">[</span><span class="s1">&#39;Calificación&#39;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="n">consistent_bins</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Distribución de Calificaciones para </span><span class="si">{</span><span class="n">materia</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Calificación&#39;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Frecuencia&#39;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_major_locator</span><span class="p">(</span><span class="n">plt</span><span class="o">.</span><span class="n">MaxNLocator</span><span class="p">(</span><span class="n">integer</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+
+
+        <span class="n">y_min</span><span class="p">,</span> <span class="n">y_max</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_ylim</span><span class="p">()</span>
+        <span class="n">y_ticks</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_yticks</span><span class="p">()</span>
+
+        <span class="k">for</span> <span class="n">y_value</span> <span class="ow">in</span> <span class="n">y_ticks</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">y_value</span> <span class="o">&gt;=</span> <span class="n">y_min</span> <span class="ow">and</span> <span class="n">y_value</span> <span class="o">&lt;=</span> <span class="n">y_max</span><span class="p">:</span>
+                 <span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">y_value</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;grey&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+
+<span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">axes</span><span class="p">)):</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">delaxes</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.lines</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mlines</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mpatches</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="n">overall_mean_qualification</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;Calificación&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+<span class="n">mean_qualifications_by_subject</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Materia&#39;</span><span class="p">)[</span><span class="s1">&#39;Calificación&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="c1"># Ensure counts_df_sorted is available from previous steps</span>
+<span class="c1"># Assuming counts_df_sorted is available from previous steps, if not, calculate it:</span>
+<span class="k">if</span> <span class="s1">&#39;counts_df_sorted&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="nb">locals</span><span class="p">()</span> <span class="ow">or</span> <span class="n">counts_df_sorted</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="n">counts_df</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="s1">&#39;Materia&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+    <span class="n">counts_df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Materia&#39;</span><span class="p">,</span> <span class="s1">&#39;Número de Alumnos&#39;</span><span class="p">]</span>
+    <span class="n">counts_df_sorted</span> <span class="o">=</span> <span class="n">counts_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Número de Alumnos&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Define the order of subjects based on the number of students presented</span>
+<span class="n">subject_order</span> <span class="o">=</span> <span class="n">counts_df_sorted</span><span class="p">[</span><span class="s1">&#39;Materia&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+<span class="c1"># Order the mean qualifications DataFrame according to subject_order</span>
+<span class="c1"># This line is moved outside the conditional block</span>
+<span class="n">mean_qualifications_by_subject_ordered</span> <span class="o">=</span> <span class="n">mean_qualifications_by_subject</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;Materia&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">subject_order</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+
+<span class="c1"># Corrected the syntax error and used &#39;husl&#39; palette</span>
+<span class="n">subject_palette</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">color_palette</span><span class="p">(</span><span class="s1">&#39;husl&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">subject_order</span><span class="p">))</span>
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_cleaned</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Materia&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Calificación&#39;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="n">subject_palette</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="n">subject_order</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribución de Calificaciones por Materia con Media General y Medias por Materia (Ordenado por Número de Alumnos)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Materia&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Calificación&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">10.5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+
+<span class="n">mean_line</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">overall_mean_qualification</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Media General: </span><span class="si">{</span><span class="n">overall_mean_qualification</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">mean_qualifications_by_subject_ordered</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Materia&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Calificación&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Media por Materia&#39;</span><span class="p">)</span>
+
+
+<span class="n">sns</span><span class="o">.</span><span class="n">swarmplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_cleaned</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Materia&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Calificación&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="n">subject_order</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Calificación Individual&#39;</span><span class="p">)</span>
+
+<span class="c1"># Add horizontal lines at each integer division on the y-axis</span>
+<span class="k">for</span> <span class="n">y_value</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">y_value</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;grey&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># Add zorder to ensure lines are behind points</span>
+
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">get_legend</span><span class="p">()</span><span class="o">.</span><span class="n">remove</span><span class="p">()</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="id2">
+<h1>Conclusiones<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
+<section id="analisis-detallado-de-calificaciones-por-materia-con-numero-de-observaciones">
+<h2>📈 Análisis detallado de calificaciones por materia (con número de observaciones)<a class="headerlink" href="#analisis-detallado-de-calificaciones-por-materia-con-numero-de-observaciones" title="Link to this heading">#</a></h2>
+<section id="introduccion">
+<h3>Introducción<a class="headerlink" href="#introduccion" title="Link to this heading">#</a></h3>
+<p>Este análisis parte de los datos de calificaciones numéricas obtenidas en materias optativas por parte del alumnado, procesadas y visualizadas mediante <strong>histogramas</strong>. Se incluye además el número de calificaciones registradas por materia (<code class="docutils literal notranslate"><span class="pre">n</span></code>), lo cual es esencial para:</p>
+<ul class="simple">
+<li><p>Valorar la <strong>representatividad</strong> de los datos.</p></li>
+<li><p>Aportar solidez a las interpretaciones estadísticas.</p></li>
+<li><p>Detectar posibles <strong>sesgos</strong> derivados de muestras reducidas.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="distribucion-del-numero-de-calificaciones-por-materia">
+<h3>1. 📊 Distribución del número de calificaciones por materia<a class="headerlink" href="#distribucion-del-numero-de-calificaciones-por-materia" title="Link to this heading">#</a></h3>
+<p>Se presenta la tabla ordenada por la columna “n (nº de calificacións)” de mayor a menor:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Materia</p></th>
+<th class="head"><p>n (nº de calificacións)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Bioloxía</p></td>
+<td><p>19</p></td>
+</tr>
+<tr class="row-odd"><td><p>Química</p></td>
+<td><p>14</p></td>
+</tr>
+<tr class="row-even"><td><p>Matemáticas Aplicadas ás CCSS</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><p>Empresa e D.M. Negocio</p></td>
+<td><p>9</p></td>
+</tr>
+<tr class="row-even"><td><p>Fundamentos Artísticos</p></td>
+<td><p>9</p></td>
+</tr>
+<tr class="row-odd"><td><p>Física</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-even"><td><p>Tecnoloxía e Enxeñaría II</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-odd"><td><p>Francés</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>Matemáticas II</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Deseño</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>Xeografía</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Historia da Arte</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Coro e Técnica Vocal II</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Latín II</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Inglés</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ciencias Xerais</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Se observa una variabilidad notable no tamaño de mostra por materia. Algunhas, como <strong>Bioloxía</strong>, <strong>Química</strong> ou <strong>Matemáticas Aplicadas ás CCSS</strong>, contan con datos suficientes para conclusións razoablemente sólidas. En cambio, materias como <strong>Latín II</strong>, <strong>Inglés</strong> ou <strong>Ciencias Xerais</strong> teñen só 1 alumno/a, polo que non se poden extraer conclusións representativas.</p>
+</section>
+<hr class="docutils" />
+<section id="conclusiones-individuales-destacadas">
+<h3>2. 🔍 Conclusiones individuales destacadas<a class="headerlink" href="#conclusiones-individuales-destacadas" title="Link to this heading">#</a></h3>
+<section id="bioloxia-n-19">
+<h4>🧪 <strong>Bioloxía (n = 19)</strong><a class="headerlink" href="#bioloxia-n-19" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Ampla dispersión, con moitas notas entre 5 e 8, pero tamén casos baixos (1–2).</p></li>
+<li><p>Mediana próxima ao aprobado.</p></li>
+<li><p>Interpretación: materia con rendemento medio, pero gran diversidade de perfís no alumnado.</p></li>
+</ul>
+</section>
+<section id="fisica-n-6">
+<h4>🧲 <strong>Física (n = 6)</strong><a class="headerlink" href="#fisica-n-6" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Notas entre 3 e 6, sen sobresalientes.</p></li>
+<li><p>Mediana lixeiramente inferior ao aprobado.</p></li>
+<li><p>Conclusión: materia percibida como difícil. Posible revisión metodolóxica.</p></li>
+</ul>
+</section>
+<section id="matematicas-aplicadas-as-ccss-n-10">
+<h4>🧮 <strong>Matemáticas Aplicadas ás CCSS (n = 10)</strong><a class="headerlink" href="#matematicas-aplicadas-as-ccss-n-10" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Notas repartidas en todo o rango, con concentración entre 1 e 7.</p></li>
+<li><p>Alta dispersión, con varios suspensos.</p></li>
+<li><p>Conclusión: resultados irregulares. Necesaria atención individualizada.</p></li>
+</ul>
+</section>
+<section id="deseno-fundamentos-artisticos-n-5-9">
+<h4>🧑‍🎨 <strong>Deseño / Fundamentos Artísticos (n = 5 / 9)</strong><a class="headerlink" href="#deseno-fundamentos-artisticos-n-5-9" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Resultados positivos, con certa dispersión pero sen valores extremadamente baixos.</p></li>
+<li><p>Conclusión: materias que favorecen a perfís visuais e creativos.</p></li>
+</ul>
+</section>
+<section id="empresa-e-d-m-negocio-n-9">
+<h4>🧑‍💼 <strong>Empresa e D.M. Negocio (n = 9)</strong><a class="headerlink" href="#empresa-e-d-m-negocio-n-9" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Notas xeralmente boas, varias por riba do 8.</p></li>
+<li><p>Conclusión: alumnado motivado ou familiarizado co enfoque práctico.</p></li>
+</ul>
+</section>
+<section id="quimica-n-14">
+<h4>🧪 <strong>Química (n = 14)</strong><a class="headerlink" href="#quimica-n-14" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Resultados moi diversos: de 0 a 9.</p></li>
+<li><p>Mediana en torno ao aprobado, pero con suspensos e excelentes.</p></li>
+<li><p>Conclusión: materia esixente, pero con alumnado destacado.</p></li>
+</ul>
+</section>
+<section id="tecnoloxia-e-enxenaria-ii-n-6">
+<h4>🧑‍💻 <strong>Tecnoloxía e Enxeñaría II (n = 6)</strong><a class="headerlink" href="#tecnoloxia-e-enxenaria-ii-n-6" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Notas entre 6 e 9, sen suspensos.</p></li>
+<li><p>Conclusión: rendemento alto e homoxéneo.</p></li>
+</ul>
+<hr class="docutils" />
+</section>
+</section>
+<hr class="docutils" />
+<section id="comparativa-de-resultados-por-materia-revisar">
+<h3>3. 🧮 Comparativa de resultados por materia REVISAR<a class="headerlink" href="#comparativa-de-resultados-por-materia-revisar" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Materia</p></th>
+<th class="head"><p>Mediana aprox.</p></th>
+<th class="head"><p>Dispersión</p></th>
+<th class="head"><p>Observaciones clave</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Bioloxía</p></td>
+<td><p>Alta (&gt;7)</p></td>
+<td><p>Media</p></td>
+<td><p>Grupo homogéneo, alto rendimiento general</p></td>
+</tr>
+<tr class="row-odd"><td><p>Debuxo Técnico II</p></td>
+<td><p>Alta (~7)</p></td>
+<td><p>Baja</p></td>
+<td><p>Resultados consistentes y buenos</p></td>
+</tr>
+<tr class="row-even"><td><p>Física</p></td>
+<td><p>Baja (&lt;5)</p></td>
+<td><p>Alta</p></td>
+<td><p>Alta tasa de suspensos</p></td>
+</tr>
+<tr class="row-odd"><td><p>Historia da Arte</p></td>
+<td><p>Baja (&lt;5)</p></td>
+<td><p>Media</p></td>
+<td><p>Bajo rendimiento generalizado</p></td>
+</tr>
+<tr class="row-even"><td><p>Xeografía</p></td>
+<td><p>Media-baja</p></td>
+<td><p>Alta</p></td>
+<td><p>Grupo muy variado</p></td>
+</tr>
+<tr class="row-odd"><td><p>Técnicas de expresión gráfico-plástica</p></td>
+<td><p>Media</p></td>
+<td><p>Alta</p></td>
+<td><p>Notas diversas; materia dependiente del perfil</p></td>
+</tr>
+<tr class="row-even"><td><p>Francés</p></td>
+<td><p>Baja (&lt;5)</p></td>
+<td><p>Baja</p></td>
+<td><p>Bajo rendimiento en una muestra pequeña</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tecnoloxía e Enxeñaría II</p></td>
+<td><p>Alta</p></td>
+<td><p>Baja</p></td>
+<td><p>Resultados positivos y homogéneos</p></td>
+</tr>
+<tr class="row-even"><td><p>Coro e Técnica Vocal II</p></td>
+<td><p>Alta</p></td>
+<td><p>Nula</p></td>
+<td><p>Todos sobresalientes, pero solo 3 alumnos/as</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="consideracions-xerais">
+<h3>4. 📌 Consideracións xerais<a class="headerlink" href="#consideracions-xerais" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Materias con mellor rendemento</strong></p>
+<ul class="simple">
+<li><p>Tecnoloxía e Enxeñaría II, Deseño e Empresa presentan resultados altos e consistentes.</p></li>
+<li><p>Posible bo axuste entre alumnado e contidos.</p></li>
+</ul>
+</li>
+<li><p><strong>Materias con rendemento baixo ou irregular</strong></p>
+<ul class="simple">
+<li><p>Física, Historia da Arte, Matemáticas Aplicadas ás CCSS, e Química mostran alta dispersión ou concentración de suspensos.</p></li>
+<li><p>Requírese atención metodolóxica e reforzo.</p></li>
+</ul>
+</li>
+<li><p><strong>Materias con mostra insuficiente</strong></p>
+<ul class="simple">
+<li><p>En materias con <strong>n ≤ 2</strong> (Latín II, Inglés, Coro, Ciencias Xerais), non se poden extraer conclusións sólidas.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="recomendacions">
+<h3>5. 📎 Recomendacións<a class="headerlink" href="#recomendacions" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Reforzar o acompañamento en materias con moitos suspensos.</p></li>
+<li><p>Fomentar boas prácticas metodolóxicas detectadas nas materias con alto rendemento.</p></li>
+<li><p>Analizar conxuntamente co profesorado os resultados para detectar factores contextuais.</p></li>
+<li><p>Manter un seguimento anual para observar evolucións e impacto das medidas.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Parte voluntaria</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-estadistico">Análisis estadístico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-y-distribucion-de-calificaciones-individuales-sin-diferenciar-materias-voluntarias"><strong>1. Análisis y distribución de calificaciones individuales (sin diferenciar materias voluntarias)</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-del-histograma"><strong>Análisis del Histograma:</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones"><strong>Conclusiones</strong>:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-del-boxplot"><strong>Análisis del Boxplot:</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>Conclusiones</strong>:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-y-distribucion-de-calificaciones-diferenciando-materias-voluntarias"><strong>2. Análisis y distribución de calificaciones (diferenciando materias voluntarias)</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identificar-materias-unicas-y-no-estudiantes-calificados">Identificar materias únicas y nº estudiantes calificados</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#histogramas-por-materias-voluntarias">Histogramas por materias voluntarias</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generar-histogramas-por-materia">Generar histogramas por materia</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subtask">Subtask:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Conclusiones</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-detallado-de-calificaciones-por-materia-con-numero-de-observaciones">📈 Análisis detallado de calificaciones por materia (con número de observaciones)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">Introducción</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-del-numero-de-calificaciones-por-materia">1. 📊 Distribución del número de calificaciones por materia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones-individuales-destacadas">2. 🔍 Conclusiones individuales destacadas</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#bioloxia-n-19">🧪 <strong>Bioloxía (n = 19)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fisica-n-6">🧲 <strong>Física (n = 6)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#matematicas-aplicadas-as-ccss-n-10">🧮 <strong>Matemáticas Aplicadas ás CCSS (n = 10)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deseno-fundamentos-artisticos-n-5-9">🧑‍🎨 <strong>Deseño / Fundamentos Artísticos (n = 5 / 9)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#empresa-e-d-m-negocio-n-9">🧑‍💼 <strong>Empresa e D.M. Negocio (n = 9)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#quimica-n-14">🧪 <strong>Química (n = 14)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tecnoloxia-e-enxenaria-ii-n-6">🧑‍💻 <strong>Tecnoloxía e Enxeñaría II (n = 6)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparativa-de-resultados-por-materia-revisar">3. 🧮 Comparativa de resultados por materia REVISAR</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#consideracions-xerais">4. 📌 Consideracións xerais</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recomendacions">5. 📎 Recomendacións</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,2518 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Análisis descriptivo PAU 2024-25 &#8212; My Jupyter Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'PAU 2024-25';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">My Jupyter Book</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Análisis de resultados PAU 2024/25</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="metodologia.html">Metodología</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">A. Análisis parte xeral</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="parte_xeral_a1.html">A1. Sin diferenciar materias de modalidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="parte_xeral_a2.html">A2. Diferenciando materias de modalidad</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">B. Análisis parte voluntaria</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="proba_voluntaria_A.html">B1. Sin diferenciar materias voluntarias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="proba_voluntaria_B.html">B2. Proba voluntaria: diferenciando materias de modalidad</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/PAU 2024-25.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Análisis descriptivo PAU 2024-25</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ies-frei-martin-sarmiento-pontevedra">IES FREI MARTÍN SARMIENTO (PONTEVEDRA)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#carga-de-los-datos">1. Carga de los datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-estadistico">2. Análisis estadístico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-de-los-datos">3. Visualización de los datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones">4. Conclusiones</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-los-histogramas">4.1. Análisis de los histogramas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lingua-castela-e-literatura">🔹 1. <strong>Lingua castelá e literatura</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lingua-galega-e-literatura">🔹 2. <strong>Lingua galega e literatura</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#historia-de-espana">🔹 3. <strong>Historia de España</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#historia-da-filosofia">🔹 4. <strong>Historia da Filosofía</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cualif-lingua-estranxeira">🔹 5. <strong>Cualif. Lingua Estranxeira</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cualif-materia-modalidade">🔹 6. <strong>Cualif. Materia Modalidade</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cualificacion-parte-xeral">🔹 7. <strong>Cualificación parte xeral</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cualificacion-expediente-bacharelato">🔹 8. <strong>Cualificación expediente bacharelato</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-general">🟩 Conclusión general</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-los-box-plots">4.2. Análisis de los box plots</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. <strong>Lingua Castelá e Literatura</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. <strong>Lingua Galega e Literatura</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3. <strong>Historia de España</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4. <strong>Historia da Filosofía</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5. <strong>Cualif. Lingua Estranxeira</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">6. <strong>Cualif. Materia Modalidade</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">7. <strong>Cualificación Parte Xeral</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">8. <strong>Cualificación Expediente Bacharelato</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones-generales">🧾 <strong>Conclusiones Generales</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fortalezas-y-debilidades-del-malumnado">📌 Fortalezas y debilidades del malumnado</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-analisis-por-materias-de-modalidad">B. Análisis por materias de modalidad</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identificar-las-materias-de-modalidad">Identificar las materias de modalidad</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agrupar-por-materia-de-modalidad">Agrupar por materia de modalidad</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subtask">Subtask:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-por-materia">Visualización por materia</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Subtask:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparar-y-concluir">Comparar y concluir</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Subtask:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-analysis-key-findings">Data Analysis Key Findings</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#insights-or-next-steps">Insights or Next Steps</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Summary:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Data Analysis Key Findings</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Insights or Next Steps</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="analisis-descriptivo-pau-2024-25">
+<h1>Análisis descriptivo PAU 2024-25<a class="headerlink" href="#analisis-descriptivo-pau-2024-25" title="Link to this heading">#</a></h1>
+<section id="ies-frei-martin-sarmiento-pontevedra">
+<h2>IES FREI MARTÍN SARMIENTO (PONTEVEDRA)<a class="headerlink" href="#ies-frei-martin-sarmiento-pontevedra" title="Link to this heading">#</a></h2>
+<p><strong>Objetivo:</strong></p>
+<ul class="simple">
+<li><p>Realizar un estudio estadístico descriptivo sobre los datos del archivo.</p></li>
+<li><p>Analizar las variables numéricas del conjunto de datos para comprender su distribución, tendencia central, dispersión y posibles valores atípicos.</p></li>
+</ul>
+<p><strong>Herramientas</strong>:</p>
+<ul class="simple">
+<li><p>Lenguaje de programación: Python</p></li>
+<li><p>Librerías de Python: Pandas, Numpy y Matplotlib</p></li>
+</ul>
+<p><strong>Pasos realizados:</strong></p>
+<ol class="arabic simple">
+<li><p><strong>Estadísticos descriptivos básicos:</strong></p>
+<ul class="simple">
+<li><p>Se calcularon medidas como la <strong>media, mediana, desviación estándar, mínimo, máximo y cuartiles</strong> para cada columna numérica.</p></li>
+<li><p>Esto permite evaluar la tendencia central y la variabilidad de los datos.</p></li>
+</ul>
+</li>
+<li><p><strong>Visualización de distribuciones:</strong></p>
+<ul class="simple">
+<li><p><strong>Histogramas:</strong> Para observar la forma de la distribución (normal, sesgada, bimodal, etc.).</p></li>
+<li><p><strong>Diagramas de caja (box plots):</strong> Para identificar valores atípicos y comparar la dispersión entre variables.</p></li>
+</ul>
+</li>
+<li><p><strong>Análisis de valores faltantes:</strong></p>
+<ul class="simple">
+<li><p>Se verificó la presencia de datos faltantes o inconsistentes que puedan afectar el análisis.</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>Resultados esperados:</strong></p>
+<ul class="simple">
+<li><p>Identificar qué variables siguen una distribución normal y cuáles presentan sesgos.</p></li>
+<li><p>Detectar posibles errores o anomalías en los datos (valores extremos o faltantes).</p></li>
+<li><p>Determinar si algunas columnas son categóricas (como códigos) en lugar de numéricas.</p></li>
+</ul>
+<p><strong>Ejemplo de interpretación:</strong><br />
+Si una columna como <em>Cualificación parte xeral</em> muestra una media y mediana similares con poca desviación estándar, su distribución sería cercana a la normal. En cambio, si <em>Historia de España</em> tiene una mediana muy distinta de la media con una cola larga en el histograma, indicaría un sesgo, posiblemente por valores faltantes o concentración en extremos.</p>
+<p>Este estudio proporciona una base para futuros análisis, como comparaciones entre grupos o modelos predictivos.</p>
+</section>
+<section id="carga-de-los-datos">
+<h2>1. Carga de los datos<a class="headerlink" href="#carga-de-los-datos" title="Link to this heading">#</a></h2>
+<p>Se cargan los datos desde el archivo “/content/Proba_xeral.xlsx” y se crea un Dataframe de la librería Pandas de Python.</p>
+<p>Se importa la biblioteca Pandas, se lee el archivo de Excel en un DataFrame y se muestran las 10 primeras filas.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&quot;/content/Proba_xeral.xlsx&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&quot;/content/Proba_xeral.xlsx&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="analisis-estadistico">
+<h2>2. Análisis estadístico<a class="headerlink" href="#analisis-estadistico" title="Link to this heading">#</a></h2>
+<p>Se calculan los valores estadísticos descriptivos más importantes de las columnas numéricas.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">numerical_cols</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;number&#39;</span><span class="p">])</span>
+<span class="n">columns_to_exclude</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Cod. Lingua Estranxeira&#39;</span><span class="p">,</span> <span class="s1">&#39;Cod. Materia Modalidade&#39;</span><span class="p">]</span>
+<span class="n">numerical_cols_filtered</span> <span class="o">=</span> <span class="n">numerical_cols</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">columns_to_exclude</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">numerical_cols_filtered</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">T</span><span class="p">)</span> <span class="c1"># Transpose the DataFrame</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-6e47737e-16ad-415f-95be-da5ba25d7acb" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+      <th>mean</th>
+      <th>std</th>
+      <th>min</th>
+      <th>25%</th>
+      <th>50%</th>
+      <th>75%</th>
+      <th>max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Lingua  castelá e literatura</th>
+      <td>32.0</td>
+      <td>6.461</td>
+      <td>1.669</td>
+      <td>2.50</td>
+      <td>5.688</td>
+      <td>6.75</td>
+      <td>7.500</td>
+      <td>9.75</td>
+    </tr>
+    <tr>
+      <th>Lingua galega e literatura</th>
+      <td>31.0</td>
+      <td>5.968</td>
+      <td>1.879</td>
+      <td>2.50</td>
+      <td>4.875</td>
+      <td>6.00</td>
+      <td>7.375</td>
+      <td>9.50</td>
+    </tr>
+    <tr>
+      <th>Historia de España</th>
+      <td>20.0</td>
+      <td>5.912</td>
+      <td>2.547</td>
+      <td>1.50</td>
+      <td>4.062</td>
+      <td>5.50</td>
+      <td>8.188</td>
+      <td>9.75</td>
+    </tr>
+    <tr>
+      <th>Historia da Filosofía</th>
+      <td>12.0</td>
+      <td>5.896</td>
+      <td>1.769</td>
+      <td>2.75</td>
+      <td>5.000</td>
+      <td>5.75</td>
+      <td>6.625</td>
+      <td>9.50</td>
+    </tr>
+    <tr>
+      <th>Lingua Estranxeira</th>
+      <td>32.0</td>
+      <td>6.492</td>
+      <td>1.482</td>
+      <td>2.00</td>
+      <td>5.750</td>
+      <td>6.75</td>
+      <td>7.500</td>
+      <td>9.00</td>
+    </tr>
+    <tr>
+      <th>Materia Modalidade</th>
+      <td>32.0</td>
+      <td>6.844</td>
+      <td>1.635</td>
+      <td>3.50</td>
+      <td>5.688</td>
+      <td>6.75</td>
+      <td>8.250</td>
+      <td>9.50</td>
+    </tr>
+    <tr>
+      <th>Cualificación parte xeral</th>
+      <td>32.0</td>
+      <td>6.325</td>
+      <td>1.140</td>
+      <td>3.55</td>
+      <td>5.500</td>
+      <td>6.55</td>
+      <td>7.038</td>
+      <td>8.60</td>
+    </tr>
+    <tr>
+      <th>Cualificación expediente bacharelato</th>
+      <td>32.0</td>
+      <td>7.385</td>
+      <td>0.848</td>
+      <td>5.53</td>
+      <td>6.752</td>
+      <td>7.29</td>
+      <td>7.790</td>
+      <td>9.50</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-6e47737e-16ad-415f-95be-da5ba25d7acb')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-6e47737e-16ad-415f-95be-da5ba25d7acb button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-6e47737e-16ad-415f-95be-da5ba25d7acb');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-6a1215ce-3e3f-4ce8-b444-b809991e4887">
+      <button class="colab-df-quickchart" onclick="quickchart('df-6a1215ce-3e3f-4ce8-b444-b809991e4887')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-6a1215ce-3e3f-4ce8-b444-b809991e4887 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+    </div>
+  </div>
+</div></div>
+</div>
+</section>
+<section id="visualizacion-de-los-datos">
+<h2>3. Visualización de los datos<a class="headerlink" href="#visualizacion-de-los-datos" title="Link to this heading">#</a></h2>
+<p>Generamos visualizaciones para explorar la distribución de los datos. Los gráficos seleccionados son histogramas y diagramas de caja (box plot).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="c1"># Select numerical columns for visualization</span>
+<span class="n">numerical_cols</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;number&#39;</span><span class="p">])</span>
+<span class="n">columns_to_exclude</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Cod. Lingua Estranxeira&#39;</span><span class="p">,</span> <span class="s1">&#39;Cod. Materia Modalidade&#39;</span><span class="p">]</span> <span class="c1"># Corrected column name</span>
+<span class="n">numerical_cols_viz</span> <span class="o">=</span> <span class="n">numerical_cols</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">columns_to_exclude</span><span class="p">)</span>
+
+<span class="c1"># Calculate the mean excluding the last two columns</span>
+<span class="n">mean_excluding_last_two</span> <span class="o">=</span> <span class="n">numerical_cols_viz</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="p">:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+<span class="c1"># Calculate the overall mean of all numerical columns being visualized</span>
+<span class="n">overall_mean_numerical_viz</span> <span class="o">=</span> <span class="n">numerical_cols_viz</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+
+<span class="c1"># Create histograms</span>
+<span class="n">numerical_cols_viz</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Histogramas de Columnas Numéricas&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.92</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">(</span><span class="n">rect</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.03</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span> <span class="c1"># Add horizontal grid lines</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c1"># Set x-axis limits from 0 to 10</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Create box plots</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">numerical_cols_viz</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Box Plots de Columnas Numéricas&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span> <span class="c1"># Set y-axis ticks from 0 to 10 with step 1</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c1"># Set y-axis limits from 0 to 10</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;MATERIAS&#39;</span><span class="p">)</span> <span class="c1"># Set x-axis label</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;PUNTUACIONES: Mínimo, 2º cuartil, media, 3º cuartil, máximo&#39;</span><span class="p">)</span> <span class="c1"># Set y-axis label</span>
+
+<span class="c1"># Add horizontal line for the mean excluding the last two columns</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">mean_excluding_last_two</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;dashed&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Media (excluyendo últimas 2 columnas) (</span><span class="si">{</span><span class="n">mean_excluding_last_two</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">)</span>
+
+<span class="c1"># Add horizontal line for the overall mean of all numerical columns being visualized</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">overall_mean_numerical_viz</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;dotted&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Media General (</span><span class="si">{</span><span class="n">overall_mean_numerical_viz</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">)</span>
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span> <span class="c1"># Show the legend for the horizontal lines</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/3205e16186ca365fa0874b0cb8ed5b499ee5da5053802da2e9008dcb465a6fbc.png" src="_images/3205e16186ca365fa0874b0cb8ed5b499ee5da5053802da2e9008dcb465a6fbc.png" />
+<img alt="_images/b8133426ec071e8b17e9e15d4db6eaf6532fd6b1b6970a63d1e7e9de1105f071.png" src="_images/b8133426ec071e8b17e9e15d4db6eaf6532fd6b1b6970a63d1e7e9de1105f071.png" />
+</div>
+</div>
+</section>
+<section id="conclusiones">
+<h2>4. Conclusiones<a class="headerlink" href="#conclusiones" title="Link to this heading">#</a></h2>
+<section id="analisis-de-los-histogramas">
+<h3>4.1. Análisis de los histogramas<a class="headerlink" href="#analisis-de-los-histogramas" title="Link to this heading">#</a></h3>
+</section>
+<section id="lingua-castela-e-literatura">
+<h3>🔹 1. <strong>Lingua castelá e literatura</strong><a class="headerlink" href="#lingua-castela-e-literatura" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Distribución:</strong> Centrada entre 6 y 8.</p></li>
+<li><p><strong>Conclusión:</strong> La mayoría del alumnado obtiene calificaciones medias-altas. Hay pocos con notas muy bajas o muy altas.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="lingua-galega-e-literatura">
+<h3>🔹 2. <strong>Lingua galega e literatura</strong><a class="headerlink" href="#lingua-galega-e-literatura" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Distribución:</strong> Similar a la de lengua castellana, pero con más dispersión.</p></li>
+<li><p><strong>Conclusión:</strong> Predominan también las notas entre 5 y 7, aunque hay mayor variabilidad. Algunos estudiantes destacan con notas altas.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="historia-de-espana">
+<h3>🔹 3. <strong>Historia de España</strong><a class="headerlink" href="#historia-de-espana" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Distribución:</strong> Más dispersa, con un número significativo de notas bajas (3-5) y altas (8-9).</p></li>
+<li><p><strong>Conclusión:</strong> Notas bastante repartidas. Hay tanto alumnado con dificultades como con buenos resultados. Posiblemente sea una materia con mayor polarización.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="historia-da-filosofia">
+<h3>🔹 4. <strong>Historia da Filosofía</strong><a class="headerlink" href="#historia-da-filosofia" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Distribución:</strong> Pico en el 5-6, pero con muchas notas sueltas por debajo de 5 y algunas por encima de 7.</p></li>
+<li><p><strong>Conclusión:</strong> Resultados más irregulares. Varios estudiantes con nota mínima (incluso &lt; 3). Parece una materia más difícil para parte del alumnado.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="cualif-lingua-estranxeira">
+<h3>🔹 5. <strong>Cualif. Lingua Estranxeira</strong><a class="headerlink" href="#cualif-lingua-estranxeira" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Distribución:</strong> Claramente concentrada en el 6-8.</p></li>
+<li><p><strong>Conclusión:</strong> Muy buenos resultados. Parece que el alumnado se desenvuelve bien en lengua extranjera. Pocas notas bajas.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="cualif-materia-modalidade">
+<h3>🔹 6. <strong>Cualif. Materia Modalidade</strong><a class="headerlink" href="#cualif-materia-modalidade" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Distribución:</strong> También bastante equilibrada, pero con mayor dispersión que en lengua extranjera.</p></li>
+<li><p><strong>Conclusión:</strong> Rendimiento general bueno, aunque hay más estudiantes con notas bajas comparado con la lengua extranjera.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="cualificacion-parte-xeral">
+<h3>🔹 7. <strong>Cualificación parte xeral</strong><a class="headerlink" href="#cualificacion-parte-xeral" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Distribución:</strong> Centrada entre 6 y 7.</p></li>
+<li><p><strong>Conclusión:</strong> Desempeño general estable en la parte común de las materias. La mayoría supera el 5 con soltura.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="cualificacion-expediente-bacharelato">
+<h3>🔹 8. <strong>Cualificación expediente bacharelato</strong><a class="headerlink" href="#cualificacion-expediente-bacharelato" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Distribución:</strong> Más concentrada en el tramo 6.5–8.5.</p></li>
+<li><p><strong>Conclusión:</strong> Expedientes de bachillerato mayoritariamente buenos. Indica que el alumnado llega a la ABAU con una buena base.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="conclusion-general">
+<h2>🟩 Conclusión general<a class="headerlink" href="#conclusion-general" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Las <strong>mejores notas</strong> aparecen en: <em>Lingua estranxeira</em>, <em>Cualificación expediente bacharelato</em> y <em>Cualif. parte xeral</em>.</p></li>
+<li><p>Las materias con <strong>mayor dificultad aparente</strong> son: <em>Historia da Filosofía</em> y <em>Historia de España</em>, por la mayor presencia de notas bajas.</p></li>
+<li><p>En general, el alumnado parece estar bien preparado en las áreas troncales, aunque algunas asignaturas muestran más dispersión que otras.</p></li>
+</ul>
+<section id="analisis-de-los-box-plots">
+<h3>4.2. Análisis de los box plots<a class="headerlink" href="#analisis-de-los-box-plots" title="Link to this heading">#</a></h3>
+</section>
+<section id="id1">
+<h3>1. <strong>Lingua Castelá e Literatura</strong><a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Media:</strong> 6,46</p></li>
+<li><p><strong>Mediana:</strong> 6,75</p></li>
+<li><p><strong>Rango intercuartílico (RIQ):</strong> 7,50 - 5,69 ≈ 1,81</p></li>
+<li><p><strong>Min - Max:</strong> 2,5 a 9,75</p></li>
+<li><p><strong>Conclusión:</strong> Distribución moderadamente simétrica y concentrada en la parte media-alta. Pocos valores extremos. Buen rendimiento general.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id2">
+<h3>2. <strong>Lingua Galega e Literatura</strong><a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Media:</strong> 5,97</p></li>
+<li><p><strong>Mediana:</strong> 6,00</p></li>
+<li><p><strong>RIQ:</strong> 7,38 - 4,88 ≈ 2,5</p></li>
+<li><p><strong>Desviación estándar:</strong> 1,88 (alta)</p></li>
+<li><p><strong>Conclusión:</strong> Hay mayor dispersión que en lengua castellana, y más alumnado con notas por debajo del aprobado. Distribución algo más dispersa y con varios valores bajos.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id3">
+<h3>3. <strong>Historia de España</strong><a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Media:</strong> 5,91</p></li>
+<li><p><strong>Mediana:</strong> 5,5</p></li>
+<li><p><strong>RIQ:</strong> 8,19 - 4,06 ≈ 4,13 (muy alto)</p></li>
+<li><p><strong>Desviación estándar:</strong> 2,55</p></li>
+<li><p><strong>Conclusión:</strong> Gran dispersión de notas. La más variable de todas. Algunos alumnos destacan, pero muchos tienen dificultades. Puede ser la materia más desequilibrada.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id4">
+<h3>4. <strong>Historia da Filosofía</strong><a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Media:</strong> 5,90</p></li>
+<li><p><strong>Mediana:</strong> 5,75</p></li>
+<li><p><strong>RIQ:</strong> 6,63 - 5,00 ≈ 1,63</p></li>
+<li><p><strong>Conclusión:</strong> Aunque la media es baja, la mayoría se concentra en torno al aprobado. Pocos alumnos sobresalientes.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id5">
+<h3>5. <strong>Cualif. Lingua Estranxeira</strong><a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Media:</strong> 6,49</p></li>
+<li><p><strong>Mediana:</strong> 6,75</p></li>
+<li><p><strong>RIQ:</strong> 7,5 - 5,75 = 1,75</p></li>
+<li><p><strong>Conclusión:</strong> Notas bastante homogéneas y en general positivas. Una de las materias con mejor rendimiento medio y menor dispersión.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id6">
+<h3>6. <strong>Cualif. Materia Modalidade</strong><a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Media:</strong> 6,84</p></li>
+<li><p><strong>Mediana:</strong> 6,75</p></li>
+<li><p><strong>RIQ:</strong> 8,25 - 5,69 ≈ 2,56</p></li>
+<li><p><strong>Conclusión:</strong> Buenos resultados, aunque algo dispersos. Hay estudiantes que destacan mucho y algunos que suspenden.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id7">
+<h3>7. <strong>Cualificación Parte Xeral</strong><a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Media:</strong> 6,33</p></li>
+<li><p><strong>Mediana:</strong> 6,55</p></li>
+<li><p><strong>RIQ:</strong> 7,04 - 5,5 ≈ 1,54</p></li>
+<li><p><strong>Conclusión:</strong> Resultados razonablemente homogéneos y buenos. La parte común muestra estabilidad.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id8">
+<h3>8. <strong>Cualificación Expediente Bacharelato</strong><a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Media:</strong> 7,39</p></li>
+<li><p><strong>Mediana:</strong> 7,29</p></li>
+<li><p><strong>Desviación estándar:</strong> 0,85 (muy baja)</p></li>
+<li><p><strong>RIQ:</strong> 7,79 - 6,75 = 1,04</p></li>
+<li><p><strong>Conclusión:</strong> Es la columna con menor dispersión y con mejor media. El expediente académico muestra constancia y buen rendimiento sostenido.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="conclusiones-generales">
+<h2>🧾 <strong>Conclusiones Generales</strong><a class="headerlink" href="#conclusiones-generales" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Materia</p></th>
+<th class="head"><p>Media</p></th>
+<th class="head"><p>RIQ</p></th>
+<th class="head"><p>Dificultad/Puntuación media</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Historia de España</p></td>
+<td><p>5,91</p></td>
+<td><p><strong>4,13</strong></p></td>
+<td><p>Muy variable, más difícil</p></td>
+</tr>
+<tr class="row-odd"><td><p>Historia da Filosofía</p></td>
+<td><p>5,90</p></td>
+<td><p>1,63</p></td>
+<td><p>Rendimiento justo</p></td>
+</tr>
+<tr class="row-even"><td><p>Lingua galega e literatura</p></td>
+<td><p>5,97</p></td>
+<td><p>2,50</p></td>
+<td><p>Dispersa, media justa</p></td>
+</tr>
+<tr class="row-odd"><td><p>Lingua castelá e literatura</p></td>
+<td><p>6,46</p></td>
+<td><p>1,81</p></td>
+<td><p>Buen rendimiento</p></td>
+</tr>
+<tr class="row-even"><td><p>Cualif. Lingua Estranxeira</p></td>
+<td><p>6,49</p></td>
+<td><p>1,75</p></td>
+<td><p>Buena nota, estable</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cualif. Materia Modalidade</p></td>
+<td><p>6,84</p></td>
+<td><p>2,56</p></td>
+<td><p>Buena nota, dispersión alta</p></td>
+</tr>
+<tr class="row-even"><td><p>Cualif. Parte Xeral</p></td>
+<td><p>6,33</p></td>
+<td><p>1,54</p></td>
+<td><p>Buen rendimiento medio</p></td>
+</tr>
+<tr class="row-odd"><td><p>Expediente Bacharelato</p></td>
+<td><p><strong>7,39</strong></p></td>
+<td><p><strong>1,04</strong></p></td>
+<td><p>La mejor media, muy estable</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="fortalezas-y-debilidades-del-malumnado">
+<h2>📌 Fortalezas y debilidades del malumnado<a class="headerlink" href="#fortalezas-y-debilidades-del-malumnado" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Fortalezas generales:</strong> Idioma extranjero, materia de modalidad, parte xeral y expediente bacharelato.</p></li>
+<li><p><strong>Puntos de mejora:</strong> Historia de España y Filosofía, que presentan mayor dispersión y medias más bajas.</p></li>
+<li><p><strong>Expediente vs ABAU:</strong> El expediente de bachillerato es claramente más alto y más homogéneo que las calificaciones obtenidas en la ABAU.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="b-analisis-por-materias-de-modalidad">
+<h2>B. Análisis por materias de modalidad<a class="headerlink" href="#b-analisis-por-materias-de-modalidad" title="Link to this heading">#</a></h2>
+<p>Es oportuno hacer un análisis de los datos teniendo en cuenta las distintas materias de modalidad.</p>
+<p><strong>Objetivo:</strong></p>
+<ul class="simple">
+<li><p>Identificar las materias de modalidad: Filtrar el DataFrame para incluir solo las columnas relevantes para las materias de modalidad.</p></li>
+<li><p>Agrupar por materia de modalidad: Agrupar los datos por la columna ‘Materia modalidade’.</p></li>
+<li><p>Análisis estadístico por materia: Calcular los estadísticos descriptivos (media, mediana, desviación estándar, etc.) para la columna ‘Cualif. Materia Modalidade’ dentro de cada grupo (cada materia de modalidad).</p></li>
+<li><p>Visualización por materia: Generar histogramas y/o box plots de la columna ‘Cualif. Materia Modalidade’ para cada materia de modalidad para visualizar sus distribuciones.</p></li>
+<li><p>Comparar y concluir: Analizar los resultados estadísticos y las visualizaciones para comparar el rendimiento en las diferentes materias de modalidad e identificar posibles diferencias.</p></li>
+</ul>
+</section>
+<section id="identificar-las-materias-de-modalidad">
+<h2>Identificar las materias de modalidad<a class="headerlink" href="#identificar-las-materias-de-modalidad" title="Link to this heading">#</a></h2>
+<p>Filtramos el DataFrame para incluir solo las columnas relevantes para las materias de modalidad. Son: ´Materia de modalidade´ y ´Cualif. Materia de Modalidade´</p>
+<p><strong>Reasoning</strong>:
+Filter the DataFrame to include only the ‘Materia modalidade’ and ‘Cualif. Materia Modalidade’ columns.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">modalidad_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Apelidos&#39;</span><span class="p">,</span><span class="s1">&#39;Nome&#39;</span><span class="p">,</span> <span class="s1">&#39;Nom. Materia modalidade&#39;</span><span class="p">,</span> <span class="s1">&#39;Materia Modalidade&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">display</span><span class="p">(</span><span class="n">modalidad_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-ce53db4d-9578-4a9a-8f11-87694ceea4a7" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Apelidos</th>
+      <th>Nome</th>
+      <th>Nom. Materia modalidade</th>
+      <th>Materia Modalidade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ÁLVAREZ GRAÑA</td>
+      <td>ERIC</td>
+      <td>Artes Escénicas II</td>
+      <td>4.50</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AMMI GUAROUACH</td>
+      <td>ZARA</td>
+      <td>Latín II</td>
+      <td>7.00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ARIAS PORTELA</td>
+      <td>JOSÉ</td>
+      <td>Matemáticas II</td>
+      <td>8.75</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>BARREIRO ALDAO</td>
+      <td>LIDIA</td>
+      <td>Análisis Musical II</td>
+      <td>6.50</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>CABO SENRA</td>
+      <td>MARTÍN</td>
+      <td>Matemáticas II</td>
+      <td>9.50</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>CALVO DURÁN</td>
+      <td>ADÁN</td>
+      <td>Matemáticas II</td>
+      <td>7.75</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>CASADO MIRANDA</td>
+      <td>UXÍA</td>
+      <td>Artes Escénicas II</td>
+      <td>5.00</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>CASTRO GONZÁLEZ</td>
+      <td>ESTELA</td>
+      <td>Matemáticas II</td>
+      <td>8.25</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>FARAMIÑÁN FERVENZA</td>
+      <td>HUGO</td>
+      <td>Debuxo Artístico II</td>
+      <td>7.00</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>FEIJOÓ GONZÁLEZ</td>
+      <td>HUGO</td>
+      <td>Matemáticas II</td>
+      <td>5.75</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-ce53db4d-9578-4a9a-8f11-87694ceea4a7')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-ce53db4d-9578-4a9a-8f11-87694ceea4a7 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-ce53db4d-9578-4a9a-8f11-87694ceea4a7');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-39f0a1a9-f9d0-4458-9c38-a9d27b90f290">
+      <button class="colab-df-quickchart" onclick="quickchart('df-39f0a1a9-f9d0-4458-9c38-a9d27b90f290')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-39f0a1a9-f9d0-4458-9c38-a9d27b90f290 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+    </div>
+  </div>
+</div></div>
+</div>
+</section>
+<section id="agrupar-por-materia-de-modalidad">
+<h2>Agrupar por materia de modalidad<a class="headerlink" href="#agrupar-por-materia-de-modalidad" title="Link to this heading">#</a></h2>
+<section id="subtask">
+<h3>Subtask:<a class="headerlink" href="#subtask" title="Link to this heading">#</a></h3>
+<p>Agrupar los datos por la columna ‘Materia modalidade’ para preparar el análisis estadístico y la visualización por materia.</p>
+<p><strong>Reasoning</strong>:
+Calculate descriptive statistics for the ‘Cualif. Materia Modalidade’ column within each group (each modality subject).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">modalidad_stats</span> <span class="o">=</span> <span class="n">grouped_modalidad_df</span><span class="p">[</span><span class="s1">&#39;Cualif. Materia Modalidade&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<span class="n">display</span><span class="p">(</span><span class="n">modalidad_stats</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-aea3a73a-cb87-4fb8-9403-6b643da52125" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+      <th>mean</th>
+      <th>std</th>
+      <th>min</th>
+      <th>25%</th>
+      <th>50%</th>
+      <th>75%</th>
+      <th>max</th>
+    </tr>
+    <tr>
+      <th>Materia modalidade</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Análisis Musical II</th>
+      <td>1.0</td>
+      <td>6.500000</td>
+      <td>NaN</td>
+      <td>6.50</td>
+      <td>6.5000</td>
+      <td>6.500</td>
+      <td>6.5000</td>
+      <td>6.50</td>
+    </tr>
+    <tr>
+      <th>Artes Escénicas II</th>
+      <td>4.0</td>
+      <td>4.875000</td>
+      <td>0.250000</td>
+      <td>4.50</td>
+      <td>4.8750</td>
+      <td>5.000</td>
+      <td>5.0000</td>
+      <td>5.00</td>
+    </tr>
+    <tr>
+      <th>Debuxo Artístico II</th>
+      <td>9.0</td>
+      <td>6.944444</td>
+      <td>1.483123</td>
+      <td>5.00</td>
+      <td>6.0000</td>
+      <td>6.250</td>
+      <td>8.0000</td>
+      <td>9.25</td>
+    </tr>
+    <tr>
+      <th>Latín II</th>
+      <td>2.0</td>
+      <td>6.250000</td>
+      <td>1.060660</td>
+      <td>5.50</td>
+      <td>5.8750</td>
+      <td>6.250</td>
+      <td>6.6250</td>
+      <td>7.00</td>
+    </tr>
+    <tr>
+      <th>Matemáticas Apl. ás CC.SS.</th>
+      <td>10.0</td>
+      <td>6.950000</td>
+      <td>1.824981</td>
+      <td>3.50</td>
+      <td>6.0625</td>
+      <td>7.250</td>
+      <td>8.0625</td>
+      <td>9.50</td>
+    </tr>
+    <tr>
+      <th>Matemáticas II</th>
+      <td>6.0</td>
+      <td>8.083333</td>
+      <td>1.281275</td>
+      <td>5.75</td>
+      <td>7.8750</td>
+      <td>8.375</td>
+      <td>8.6875</td>
+      <td>9.50</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-aea3a73a-cb87-4fb8-9403-6b643da52125')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-aea3a73a-cb87-4fb8-9403-6b643da52125 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-aea3a73a-cb87-4fb8-9403-6b643da52125');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-be374dcf-a945-4976-ad00-7713e9c4ce34">
+      <button class="colab-df-quickchart" onclick="quickchart('df-be374dcf-a945-4976-ad00-7713e9c4ce34')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-be374dcf-a945-4976-ad00-7713e9c4ce34 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+  <div id="id_cb297073-150e-4835-b1cb-c31473e8b031">
+    <style>
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    </style>
+    <button class="colab-df-generate" onclick="generateWithVariable('modalidad_stats')"
+            title="Generate code using this dataframe."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"/>
+  </svg>
+    </button>
+    <script>
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_cb297073-150e-4835-b1cb-c31473e8b031 button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('modalidad_stats');
+      }
+      })();
+    </script>
+  </div>
+
+    </div>
+  </div>
+</div></div>
+</div>
+</section>
+</section>
+<section id="visualizacion-por-materia">
+<h2>Visualización por materia<a class="headerlink" href="#visualizacion-por-materia" title="Link to this heading">#</a></h2>
+<section id="id9">
+<h3>Subtask:<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<p>Generar histogramas y/o box plots de la columna ‘Cualif. Materia Modalidade’ para cada materia de modalidad para visualizar sus distribuciones.</p>
+<p><strong>Reasoning</strong>:
+Generate histograms and box plots for ‘Cualif. Materia Modalidade’ for each modality subject to visualize their distributions.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span> <span class="c1"># Import math for calculating grid size</span>
+
+<span class="c1"># Create subplots for each modality subject&#39;s histogram</span>
+<span class="n">num_modalities</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">grouped_modalidad_df</span><span class="p">)</span>
+<span class="n">cols</span> <span class="o">=</span> <span class="mi">3</span>  <span class="c1"># Number of columns in the subplot grid</span>
+<span class="n">rows</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">num_modalities</span> <span class="o">/</span> <span class="n">cols</span><span class="p">)</span> <span class="c1"># Calculate the number of rows needed</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="n">cols</span> <span class="o">*</span> <span class="mi">5</span><span class="p">,</span> <span class="n">rows</span> <span class="o">*</span> <span class="mi">4</span><span class="p">))</span> <span class="c1"># Adjust figure size based on grid size</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">modality</span><span class="p">,</span> <span class="n">group</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">grouped_modalidad_df</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">cols</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># Select the current subplot</span>
+    <span class="n">counts</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">patches</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">group</span><span class="p">[</span><span class="s1">&#39;Cualif. Materia Modalidade&#39;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span> <span class="c1"># Capture histogram data</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Distribución de Cualificacións para </span><span class="si">{</span><span class="n">modality</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Cualificación&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frecuencia&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c1"># Set x-axis limits from 0 to 10</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">counts</span><span class="p">))</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span> <span class="c1"># Set y-axis ticks to integers</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span> <span class="c1"># Add horizontal grid lines</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Create a single box plot for all modality subjects</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">modalidad_df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Nom. Materia modalidade&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Materia Modalidade&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;Nom. Materia modalidade&#39;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1"># Corrected column names and set hue</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Box Plot de Cualificacións por Materia de Modalidade&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Materia de Modalidade&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Cualificación&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c1"># Set y-axis limits from 0 to 10</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span>
+
+<span class="c1"># Add horizontal lines for key statistics</span>
+<span class="n">overall_mean</span> <span class="o">=</span> <span class="n">modalidad_df</span><span class="p">[</span><span class="s1">&#39;Materia Modalidade&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="c1"># Corrected column name</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">overall_mean</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;dashed&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Media Materias Modalidade (</span><span class="si">{</span><span class="n">overall_mean</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">)</span>
+
+<span class="n">overall_median</span> <span class="o">=</span> <span class="n">modalidad_df</span><span class="p">[</span><span class="s1">&#39;Materia Modalidade&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span> <span class="c1"># Corrected column name and calculate overall median</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">overall_median</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;dashed&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Mediana Materias Modalidade (</span><span class="si">{</span><span class="n">overall_median</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">)</span> <span class="c1"># Add horizontal line for overall median</span>
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span> <span class="c1"># Show the legend for the horizontal lines</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/01682caef1623912762c7be68944979077614c9a188568231712e0afd3d2842a.png" src="_images/01682caef1623912762c7be68944979077614c9a188568231712e0afd3d2842a.png" />
+<img alt="_images/2899835b718eda4972e40077780099630a1e412cbdb1c2dfade2331ba76dacdd.png" src="_images/2899835b718eda4972e40077780099630a1e412cbdb1c2dfade2331ba76dacdd.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="comparar-y-concluir">
+<h2>Comparar y concluir<a class="headerlink" href="#comparar-y-concluir" title="Link to this heading">#</a></h2>
+<section id="id10">
+<h3>Subtask:<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<p>Analizar los resultados estadísticos y las visualizaciones para comparar el rendimiento en las diferentes materias de modalidad e identificar posibles diferencias.</p>
+<p><strong>Reasoning</strong>:
+Examine the statistical results and visualizations to compare performance across modality subjects and identify differences.</p>
+</section>
+</section>
+<section id="summary">
+<h2>Summary:<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<section id="data-analysis-key-findings">
+<h3>Data Analysis Key Findings<a class="headerlink" href="#data-analysis-key-findings" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>The analysis of descriptive statistics revealed that “Matemáticas II” had the highest mean qualification among the modality subjects.</p></li>
+<li><p>“Artes Escénicas II” exhibited the lowest mean qualification.</p></li>
+<li><p>Subjects like “Historia de España” and “Lingua galega e literatura” were noted as having higher dispersion in qualifications, indicating greater variability in student performance.</p></li>
+<li><p>“Expediente Bacharelato” showed the lowest dispersion, suggesting more consistent performance.</p></li>
+<li><p>The visualizations (histograms and box plots) provided visual confirmation of these distributions and highlighted potential outliers in certain subjects.</p></li>
+</ul>
+</section>
+<section id="insights-or-next-steps">
+<h3>Insights or Next Steps<a class="headerlink" href="#insights-or-next-steps" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Further investigation into the factors contributing to the high performance in “Matemáticas II” and the lower performance in “Artes Escénicas II” could be beneficial.</p></li>
+<li><p>Analyzing the reasons behind the high variability in subjects like “Historia de España” and “Lingua galega e literatura” might inform pedagogical strategies.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Estadísticas Descriptivas por Materia de Modalidad:&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">modalidad_stats</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Análisis de las Visualizaciones (Histogramas y Box Plots):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Observar la forma de los histogramas para la distribución de calificaciones en cada materia.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Observar los box plots para la mediana, cuartiles, rango intercuartílico y posibles valores atípicos en cada materia.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Conclusiones sobre el rendimiento en las diferentes materias de modalidad:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- Matemáticas II tiene la media más alta, indicando el mejor rendimiento promedio.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- Artes Escénicas II tiene la media más baja.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- Historia de España y Lingua galega e literatura muestran mayor dispersión (mayor desviación estándar y RIQ), sugiriendo una mayor variabilidad en las calificaciones.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- Expediente Bacharelato tiene la menor dispersión, indicando mayor consistencia en las calificaciones.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- Observar los box plots para identificar materias con posibles outliers que podrían influir en la media.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Estadísticas Descriptivas por Materia de Modalidad:
+</pre></div>
+</div>
+<div class="output text_html">
+  <div id="df-59485de2-6457-467f-b5d0-754d0e268d04" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+      <th>mean</th>
+      <th>std</th>
+      <th>min</th>
+      <th>25%</th>
+      <th>50%</th>
+      <th>75%</th>
+      <th>max</th>
+    </tr>
+    <tr>
+      <th>Materia modalidade</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Análisis Musical II</th>
+      <td>1.0</td>
+      <td>6.500000</td>
+      <td>NaN</td>
+      <td>6.50</td>
+      <td>6.5000</td>
+      <td>6.500</td>
+      <td>6.5000</td>
+      <td>6.50</td>
+    </tr>
+    <tr>
+      <th>Artes Escénicas II</th>
+      <td>4.0</td>
+      <td>4.875000</td>
+      <td>0.250000</td>
+      <td>4.50</td>
+      <td>4.8750</td>
+      <td>5.000</td>
+      <td>5.0000</td>
+      <td>5.00</td>
+    </tr>
+    <tr>
+      <th>Debuxo Artístico II</th>
+      <td>9.0</td>
+      <td>6.944444</td>
+      <td>1.483123</td>
+      <td>5.00</td>
+      <td>6.0000</td>
+      <td>6.250</td>
+      <td>8.0000</td>
+      <td>9.25</td>
+    </tr>
+    <tr>
+      <th>Latín II</th>
+      <td>2.0</td>
+      <td>6.250000</td>
+      <td>1.060660</td>
+      <td>5.50</td>
+      <td>5.8750</td>
+      <td>6.250</td>
+      <td>6.6250</td>
+      <td>7.00</td>
+    </tr>
+    <tr>
+      <th>Matemáticas Apl. ás CC.SS.</th>
+      <td>10.0</td>
+      <td>6.950000</td>
+      <td>1.824981</td>
+      <td>3.50</td>
+      <td>6.0625</td>
+      <td>7.250</td>
+      <td>8.0625</td>
+      <td>9.50</td>
+    </tr>
+    <tr>
+      <th>Matemáticas II</th>
+      <td>6.0</td>
+      <td>8.083333</td>
+      <td>1.281275</td>
+      <td>5.75</td>
+      <td>7.8750</td>
+      <td>8.375</td>
+      <td>8.6875</td>
+      <td>9.50</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-59485de2-6457-467f-b5d0-754d0e268d04')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-59485de2-6457-467f-b5d0-754d0e268d04 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-59485de2-6457-467f-b5d0-754d0e268d04');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    <div id="df-1a36be07-7752-4414-a446-bc59bf2aa94d">
+      <button class="colab-df-quickchart" onclick="quickchart('df-1a36be07-7752-4414-a446-bc59bf2aa94d')"
+                title="Suggest charts"
+                style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+      </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+      <script>
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-1a36be07-7752-4414-a446-bc59bf2aa94d button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      </script>
+    </div>
+
+  <div id="id_03cf45d5-2c8d-4348-a18f-23774526fbe7">
+    <style>
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    </style>
+    <button class="colab-df-generate" onclick="generateWithVariable('modalidad_stats')"
+            title="Generate code using this dataframe."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"/>
+  </svg>
+    </button>
+    <script>
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_03cf45d5-2c8d-4348-a18f-23774526fbe7 button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('modalidad_stats');
+      }
+      })();
+    </script>
+  </div>
+
+    </div>
+  </div>
+</div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Análisis de las Visualizaciones (Histogramas y Box Plots):
+Observar la forma de los histogramas para la distribución de calificaciones en cada materia.
+Observar los box plots para la mediana, cuartiles, rango intercuartílico y posibles valores atípicos en cada materia.
+
+Conclusiones sobre el rendimiento en las diferentes materias de modalidad:
+- Matemáticas II tiene la media más alta, indicando el mejor rendimiento promedio.
+- Artes Escénicas II tiene la media más baja.
+- Historia de España y Lingua galega e literatura muestran mayor dispersión (mayor desviación estándar y RIQ), sugiriendo una mayor variabilidad en las calificaciones.
+- Expediente Bacharelato tiene la menor dispersión, indicando mayor consistencia en las calificaciones.
+- Observar los box plots para identificar materias con posibles outliers que podrían influir en la media.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="id11">
+<h2>Summary:<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
+<section id="id12">
+<h3>Data Analysis Key Findings<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>The analysis of descriptive statistics revealed that “Matemáticas II” had the highest mean qualification among the modality subjects.</p></li>
+<li><p>“Artes Escénicas II” exhibited the lowest mean qualification.</p></li>
+<li><p>Subjects like “Historia de España” and “Lingua galega e literatura” were noted as having higher dispersion in qualifications, indicating greater variability in student performance.</p></li>
+<li><p>“Expediente Bacharelato” showed the lowest dispersion, suggesting more consistent performance.</p></li>
+<li><p>The visualizations (histogramas y box plots) provided visual confirmation of these distributions and highlighted potential outliers in certain subjects.</p></li>
+</ul>
+</section>
+<section id="id13">
+<h3>Insights or Next Steps<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Further investigation into the factors contributing to the high performance in “Matemáticas II” and the lower performance in “Artes Escénicas II” could be beneficial.</p></li>
+<li><p>Analyzing the reasons behind the high variability in subjects like “Historia de España” and “Lingua galega e literatura” might inform pedagogical strategies.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ies-frei-martin-sarmiento-pontevedra">IES FREI MARTÍN SARMIENTO (PONTEVEDRA)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#carga-de-los-datos">1. Carga de los datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-estadistico">2. Análisis estadístico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-de-los-datos">3. Visualización de los datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones">4. Conclusiones</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-los-histogramas">4.1. Análisis de los histogramas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lingua-castela-e-literatura">🔹 1. <strong>Lingua castelá e literatura</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lingua-galega-e-literatura">🔹 2. <strong>Lingua galega e literatura</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#historia-de-espana">🔹 3. <strong>Historia de España</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#historia-da-filosofia">🔹 4. <strong>Historia da Filosofía</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cualif-lingua-estranxeira">🔹 5. <strong>Cualif. Lingua Estranxeira</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cualif-materia-modalidade">🔹 6. <strong>Cualif. Materia Modalidade</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cualificacion-parte-xeral">🔹 7. <strong>Cualificación parte xeral</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cualificacion-expediente-bacharelato">🔹 8. <strong>Cualificación expediente bacharelato</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-general">🟩 Conclusión general</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-los-box-plots">4.2. Análisis de los box plots</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. <strong>Lingua Castelá e Literatura</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. <strong>Lingua Galega e Literatura</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3. <strong>Historia de España</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4. <strong>Historia da Filosofía</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5. <strong>Cualif. Lingua Estranxeira</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">6. <strong>Cualif. Materia Modalidade</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">7. <strong>Cualificación Parte Xeral</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">8. <strong>Cualificación Expediente Bacharelato</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones-generales">🧾 <strong>Conclusiones Generales</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fortalezas-y-debilidades-del-malumnado">📌 Fortalezas y debilidades del malumnado</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-analisis-por-materias-de-modalidad">B. Análisis por materias de modalidad</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identificar-las-materias-de-modalidad">Identificar las materias de modalidad</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agrupar-por-materia-de-modalidad">Agrupar por materia de modalidad</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subtask">Subtask:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-por-materia">Visualización por materia</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Subtask:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparar-y-concluir">Comparar y concluir</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Subtask:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-analysis-key-findings">Data Analysis Key Findings</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#insights-or-next-steps">Insights or Next Steps</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Summary:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Data Analysis Key Findings</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Insights or Next Steps</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
